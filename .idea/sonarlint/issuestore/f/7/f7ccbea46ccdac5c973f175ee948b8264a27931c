@@ -1,0 +1,19 @@
+
+i
+java:S1192|"NDefine a constant instead of duplicating this literal "3) ÐÐ°Ð·Ð°Ð´" 3 times.(×…“°üÿÿÿÿ
+“
+java:S11922"}Define a constant instead of duplicating this literal "ÐÐµÐ²Ñ–Ñ€Ð½Ð¸Ð¹ Ð²Ð¸Ð±Ñ–Ñ€. Ð¡Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ Ñ‰Ðµ Ñ€Ð°Ð·." 7 times.(œ¸Å
+a
+java:S1192J"FDefine a constant instead of duplicating this literal "Admin" 4 times.(Íúì³þÿÿÿÿ
+j
+java:S1192#"TDefine a constant instead of duplicating this literal "Ð’Ð°Ñˆ Ð²Ð¸Ð±Ñ–Ñ€: " 7 times.(—¿üï
+—
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¸§Ó
+g
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(øÉ“8
+H
+java:S6126"2Replace this String concatenation with Text block.(¥ÐÿÄ
+H
+java:S6126>"2Replace this String concatenation with Text block.(†×‰†
+Ú
+java:S6541"ÄA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 92 to 64, Complexity from 18 to 14, Nesting Level from 3 to 2, Number of Variables from 8 to 6.(øÉ“8

@@ -1,0 +1,172 @@
+[
+  {
+    "id": "1",
+    "userId": "user123",
+    "buildingType": "Житловий будинок",
+    "area": 120.5,
+    "perimeter": 50.2,
+    "results": [
+      {
+        "id": "1",
+        "category": "Цемент"
+      },
+      {
+        "id": "2",
+        "category": "Стінові матеріали"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "userId": "user456",
+    "buildingType": "Комерційна будівля",
+    "area": 200.0,
+    "perimeter": 70.5,
+    "results": [
+      {
+        "id": "3",
+        "category": "Стінові матеріали"
+      },
+      {
+        "id": "4",
+        "category": "Покрівельні матеріали"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "userId": "user789",
+    "buildingType": "Офісна будівля",
+    "area": 350.75,
+    "perimeter": 90.0,
+    "results": [
+      {
+        "id": "5",
+        "category": "Підлогові покриття"
+      },
+      {
+        "id": "6",
+        "category": "Штукатурка"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "userId": "user101",
+    "buildingType": "Склад",
+    "area": 500.0,
+    "perimeter": 120.0,
+    "results": [
+      {
+        "id": "7",
+        "category": "Додаткові матеріали"
+      },
+      {
+        "id": "8",
+        "category": "Цемент"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "userId": "user202",
+    "buildingType": "Гараж",
+    "area": 45.3,
+    "perimeter": 30.0,
+    "results": [
+      {
+        "id": "9",
+        "category": "Стінові матеріали"
+      },
+      {
+        "id": "10",
+        "category": "Додаткові матеріали"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "userId": "user303",
+    "buildingType": "Житловий будинок",
+    "area": 150.0,
+    "perimeter": 55.0,
+    "results": [
+      {
+        "id": "1",
+        "category": "Цемент"
+      },
+      {
+        "id": "5",
+        "category": "Покрівельні матеріали"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "userId": "user404",
+    "buildingType": "Комерційна будівля",
+    "area": 250.5,
+    "perimeter": 85.0,
+    "results": [
+      {
+        "id": "6",
+        "category": "Штукатурка"
+      },
+      {
+        "id": "2",
+        "category": "Стінові матеріали"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "userId": "user505",
+    "buildingType": "Офісна будівля",
+    "area": 300.0,
+    "perimeter": 95.0,
+    "results": [
+      {
+        "id": "8",
+        "category": "Цемент"
+      },
+      {
+        "id": "7",
+        "category": "Додаткові матеріали"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "userId": "user606",
+    "buildingType": "Склад",
+    "area": 600.0,
+    "perimeter": 130.0,
+    "results": [
+      {
+        "id": "3",
+        "category": "Стінові матеріали"
+      },
+      {
+        "id": "10",
+        "category": "Додаткові матеріали"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "userId": "user707",
+    "buildingType": "Гараж",
+    "area": 40.0,
+    "perimeter": 28.5,
+    "results": [
+      {
+        "id": "4",
+        "category": "Покрівельні матеріали"
+      },
+      {
+        "id": "9",
+        "category": "Стінові матеріали"
+      }
+    ]
+  }
+]

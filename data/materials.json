@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "name": "Цемент М400",
+    "unit": "кг",
+    "unitPrice": 8.5,
+    "unitSize": 1,
+    "category": {
+      "id": "d1a82e9b-21fa-4c6e-bbb7-e1efb8f9bb5f",
+      "name": "Цемент"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Цегла червона",
+    "unit": "шт",
+    "unitPrice": 3.2,
+    "unitSize": 1,
+    "category": {
+      "id": "a90f61f1-16b7-4fc4-9f88-b31d0c8bcba9",
+      "name": "Стінові матеріали"
+    }
+  },
+  {
+    "id": "3",
+    "name": "Бетонний блок 20x20x40",
+    "unit": "шт",
+    "unitPrice": 25,
+    "unitSize": 0.16,
+    "category": {
+      "id": "b96a25c3-75c4-4e1f-a19d-0a1c1e3cb6c0",
+      "name": "Стінові матеріали"
+    }
+  },
+  {
+    "id": "4",
+    "name": "Газоблок 60x20x30",
+    "unit": "шт",
+    "unitPrice": 35,
+    "unitSize": 0.36,
+    "category": {
+      "id": "b96a25c3-75c4-4e1f-a19d-0a1c1e3cb6c0",
+      "name": "Стінові матеріали"
+    }
+  },
+  {
+    "id": "5",
+    "name": "Покрівля металочерепиця",
+    "unit": "м2",
+    "unitPrice": 250,
+    "unitSize": 1,
+    "category": {
+      "id": "d04b377f-93d0-4738-b7e7-b56db3b913ed",
+      "name": "Покрівельні матеріали"
+    }
+  }
+]
