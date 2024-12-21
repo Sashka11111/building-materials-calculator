@@ -1,20 +1,20 @@
 package com.golod.buildingmaterialscalculator.service.operations;
 
-import com.parkcontrol.domain.model.Category;
-import com.parkcontrol.domain.model.ParkingSpot;
-import com.parkcontrol.service.ParkingSpotService;
-import com.parkcontrol.service.util.JsonDataReader;
+import com.golod.buildingmaterialscalculator.domain.model.Material;
+import com.golod.buildingmaterialscalculator.domain.model.Category;
+import com.golod.buildingmaterialscalculator.service.util.JsonDataReader;
+
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
 public class SearchService {
 
-  private static final String PARKING_SPOT_FILE_PATH = "data/categories.json";
-  private static final String CATEGORY_FILE_PATH = "data/materials.json"; // Файл для категорій
+  private static final String CATEGORY_FILE_PATH = "data/categories.json";
+  private static final String MATERIAL_FILE_PATH = "data/materials.json";
 
-  // Пошук паркувальних місць за назвою категорії
-  public List<ParkingSpot> searchParkingSpotsByCategoryName(String categoryName) {
+  // Пошук матеріалів за назвою категорії
+  public List<Material> searchMaterialsByCategoryName(String categoryName) {
     List<Category> categories = loadCategories();
 
     Category category = findCategoryByName(categoryName, categories);
@@ -23,22 +23,22 @@ public class SearchService {
       return List.of();
     }
 
-    List<ParkingSpot> parkingSpots = loadParkingSpots();
-    List<ParkingSpot> result = filterParkingSpotsByCategory(parkingSpots, category.getId());
+    List<Material> materials = loadMaterials();
+    List<Material> result = filterMaterialsByCategory(materials, category.getId());
 
-    displayParkingSpotsResult(result, categoryName);
+    displayMaterialsResult(result, categoryName);
     return result;
   }
 
-  // Пошук паркувальних місць за номером місця
-  public List<ParkingSpot> searchParkingSpotsByNumber(int spotNumber) {
-    List<ParkingSpot> parkingSpots = loadParkingSpots();
+  // Пошук матеріалів за ID
+  public List<Material> searchMaterialsById(UUID materialId) {
+    List<Material> materials = loadMaterials();
 
-    List<ParkingSpot> result = parkingSpots.stream()
-        .filter(spot -> spot.getSpotNumber() == spotNumber)
+    List<Material> result = materials.stream()
+        .filter(material -> material.getId().equals(materialId))
         .collect(Collectors.toList());
 
-    displayParkingSpotsResult(result, String.valueOf(spotNumber));
+    displayMaterialsResult(result, materialId.toString());
     return result;
   }
 
@@ -47,9 +47,9 @@ public class SearchService {
     return JsonDataReader.modelDataJsonReader(CATEGORY_FILE_PATH, Category[].class);
   }
 
-  // Завантаження паркувальних місць з JSON
-  private List<ParkingSpot> loadParkingSpots() {
-    return JsonDataReader.modelDataJsonReader(PARKING_SPOT_FILE_PATH, ParkingSpot[].class);
+  // Завантаження матеріалів з JSON
+  private List<Material> loadMaterials() {
+    return JsonDataReader.modelDataJsonReader(MATERIAL_FILE_PATH, Material[].class);
   }
 
   // Пошук категорії за назвою
@@ -60,19 +60,21 @@ public class SearchService {
         .orElse(null);
   }
 
-  // Фільтрація паркувальних місць за ID категорії
-  private List<ParkingSpot> filterParkingSpotsByCategory(List<ParkingSpot> parkingSpots, UUID categoryId) {
-    return parkingSpots.stream()
-        .filter(spot -> spot.getCategoryId().equals(categoryId)) // Порівнюємо UUID
+  // Фільтрація матеріалів за ID
+  private List<Material> filterMaterialsByCategory(List<Material> materials, UUID categoryId) {
+    return materials.stream()
+        .filter(material -> material.getCategory().getId().equals(categoryId)) // Порівнюємо ID категорії
         .collect(Collectors.toList());
   }
 
   // Виведення результатів пошуку
-  private void displayParkingSpotsResult(List<ParkingSpot> result, String searchCriteria) {
+  private void displayMaterialsResult(List<Material> result, String searchCriteria) {
     if (result.isEmpty()) {
-      System.out.println("Паркувальні місця для '" + searchCriteria + "' не знайдені.");
+      System.out.println("Матеріали для '" + searchCriteria + "' не знайдені.");
     } else {
-      ParkingSpotService.displayParkingSpots(result);
+      result.forEach(material -> {
+        System.out.println("Матеріал: " + material.getName() + ", Категорія: " + material.getCategory().getName());
+      });
     }
   }
 }

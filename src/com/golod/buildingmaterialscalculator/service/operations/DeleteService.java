@@ -1,21 +1,27 @@
 package com.golod.buildingmaterialscalculator.service.operations;
 
-import com.parkcontrol.domain.model.Category;
-import com.parkcontrol.domain.model.ParkingSpot;
-import com.parkcontrol.domain.model.User;
-import com.parkcontrol.domain.validation.UserInputHandler;
-import com.parkcontrol.service.util.FileUtil;
-import com.parkcontrol.service.util.JsonDataReader;
+import com.golod.buildingmaterialscalculator.domain.model.Category;
+import com.golod.buildingmaterialscalculator.domain.model.Material;
+import com.golod.buildingmaterialscalculator.domain.model.User;
+import com.golod.buildingmaterialscalculator.service.util.FileUtil;
+import com.golod.buildingmaterialscalculator.service.util.JsonDataReader;
+import com.golod.buildingmaterialscalculator.service.validation.UserInputHandler;
+
 import java.util.List;
 
 public class DeleteService {
 
-  private static final String CATEGORY_FILE_PATH = "data/materials.json";
-  private static final String PARKING_SPOT_FILE_PATH = "data/categories.json";
+  private static final String CATEGORY_FILE_PATH = "data/categories.json";
+  private static final String MATERIAL_FILE_PATH = "data/materials.json";
   private static final String USER_FILE_PATH = "data/users.json";
 
-  public static void deleteParkingCategory() {
+  public static void deleteCategory() {
     List<Category> categories = JsonDataReader.modelDataJsonReader(CATEGORY_FILE_PATH, Category[].class);
+
+    if (categories.isEmpty()) {
+      System.out.println("Список категорій порожній.");
+      return;
+    }
 
     System.out.println("Список доступних категорій:");
     for (Category category : categories) {
@@ -38,35 +44,34 @@ public class DeleteService {
     }
   }
 
-  public static void deleteParkingSpot() {
-    List<ParkingSpot> parkingSpots = JsonDataReader.modelDataJsonReader(PARKING_SPOT_FILE_PATH, ParkingSpot[].class);
+  public static void deleteMaterial() {
+    List<Material> materials = JsonDataReader.modelDataJsonReader(MATERIAL_FILE_PATH, Material[].class);
 
-    if (parkingSpots.isEmpty()) {
-      System.out.println("Список паркувальних місць порожній.");
+    if (materials.isEmpty()) {
+      System.out.println("Список матеріалів порожній.");
       return;
     }
 
-    System.out.println("Список доступних паркувальних місць:");
-    for (ParkingSpot spot : parkingSpots) {
-      System.out.println("ID місця: " + spot.getSpotId() + ", Номер місця: " + spot.getSpotNumber());
+    System.out.println("Список доступних матеріалів:");
+    for (Material material : materials) {
+      System.out.println("ID матеріалу: " + material.getId() + ", Назва: " + material.getName());
     }
 
-    String spotId = UserInputHandler.getStringInput("Введіть ID паркувального місця для видалення:");
+    String materialId = UserInputHandler.getStringInput("Введіть ID матеріалу, який хочете видалити:");
 
-    ParkingSpot selectedSpot = parkingSpots.stream()
-        .filter(spot -> spot.getSpotId().toString().equals(spotId))
+    Material selectedMaterial = materials.stream()
+        .filter(material -> material.getId().toString().equals(materialId))
         .findFirst()
         .orElse(null);
 
-    if (selectedSpot != null) {
-      parkingSpots.remove(selectedSpot);
-      FileUtil.saveToFile(PARKING_SPOT_FILE_PATH, parkingSpots);
-      System.out.println("Паркувальне місце успішно видалено.");
+    if (selectedMaterial != null) {
+      materials.remove(selectedMaterial);
+      FileUtil.saveToFile(MATERIAL_FILE_PATH, materials);
+      System.out.println("Матеріал успішно видалено.");
     } else {
-      System.out.println("Паркувальне місце з таким ID не знайдено.");
+      System.out.println("Матеріал з введеним ID не знайдено.");
     }
   }
-
 
   public static void deleteUser() {
     List<User> users = JsonDataReader.modelDataJsonReader(USER_FILE_PATH, User[].class);
@@ -96,5 +101,4 @@ public class DeleteService {
       System.out.println("Користувача з таким ID не знайдено.");
     }
   }
-
 }

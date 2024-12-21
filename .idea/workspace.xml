@@ -1,8 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="53a5b41b-3c46-42dc-afdb-e873f89ff1d0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/bcrypt_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jackson_annotations_2_16_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jackson_core_2_16_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jackson_databind_2_16_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df72ad646ad23c1159daf1c7d24d24466e55ea80" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/f/df72ad646ad23c1159daf1c7d24d24466e55ea80" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/MaterialService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d4bc82531da88f4a845a7813906302cb5f53ddc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/2531f75b02857aa407fddaef372d72e01a5c2b9a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2acb0ba9af083194716106765db610592c3ea4a1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e3b8bf369ed2c6d3c473a6eaeb09e0b328ce964" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/304379fff1bd455d3a8808070b1ac7ca72cbd1e9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/3101211a7d69ed7982f635c9b7a15c85392830e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d24a42bd06e58a74e99f83474f6c8e94acadcd7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fcdf6c5b6a61cf7ca95f22c5acfd9d77d03fd11" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fcdf6c5b6a61cf7ca95f22c5acfd9d77d03fd11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/47bd2e18d0a7ce6c40eb7b6a64d6ae8f22882ba0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/565ef10b828bbaef3f04527c7f61741f27557f5c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f2085b94aad625a062c0721f2c8576f9a8d79cc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f2085b94aad625a062c0721f2c8576f9a8d79cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/3/733a575377bc47f6581824c6f9fe3422625b4900" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f03a34ef6d17cd27ae9995c1f36d23250fd4125" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b83f9d9afb60a8baa3678d051c4d9bfcda345a81" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/eeeaac8c5a46ac8901e1fe100a6e0acd34de2631" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/eeeaac8c5a46ac8901e1fe100a6e0acd34de2631" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7ccbea46ccdac5c973f175ee948b8264a27931c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7ccbea46ccdac5c973f175ee948b8264a27931c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/d/0d4bc82531da88f4a845a7813906302cb5f53ddc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/5/2531f75b02857aa407fddaef372d72e01a5c2b9a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/a/2acb0ba9af083194716106765db610592c3ea4a1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/e/2e3b8bf369ed2c6d3c473a6eaeb09e0b328ce964" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/0/304379fff1bd455d3a8808070b1ac7ca72cbd1e9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/1/3101211a7d69ed7982f635c9b7a15c85392830e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/d/3d24a42bd06e58a74e99f83474f6c8e94acadcd7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/7/47bd2e18d0a7ce6c40eb7b6a64d6ae8f22882ba0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/6/565ef10b828bbaef3f04527c7f61741f27557f5c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/3/733a575377bc47f6581824c6f9fe3422625b4900" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/f/7f03a34ef6d17cd27ae9995c1f36d23250fd4125" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/8/b83f9d9afb60a8baa3678d051c4d9bfcda345a81" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/building-materials-calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/building-materials-calculator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/results.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/domain/model/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/domain/model/Material.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/domain/model/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/presentation/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/presentation/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/presentation/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/presentation/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/ParkingSpotService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/ParkingTicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/CalculationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/operations/DeleteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/operations/DeleteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/operations/EditService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/operations/EditService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/operations/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/operations/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/validation/ResultValidator.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,24 +66,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2pvT6Vac6hepUVc3D1H7AUlwbid" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/1/IdeaProjects/building-materials-calculator/libs/jackson-databind-2.16.1.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,7 +102,13 @@
       <option name="presentableId" value="Default" />
       <updated>1733645376113</updated>
       <workItem from="1733645377207" duration="2000" />
+      <workItem from="1734767946659" duration="213000" />
+      <workItem from="1734800555562" duration="5645000" />
+      <workItem from="1734813543016" duration="2785000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

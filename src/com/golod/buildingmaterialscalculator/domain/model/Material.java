@@ -10,6 +10,8 @@ public class Material {
   private double unitSize; // Розмір одиниці (для блоків, покрівлі тощо)
   private Category category; // Категорія, яка є об'єктом класу Category
 
+  public Material() {
+  }
   public Material(String id, String name, String unit, double unitPrice, double unitSize, Category category) {
     this.id = id;
     this.name = name;

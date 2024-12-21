@@ -15,7 +15,7 @@ import java.util.UUID;
 
 public class CategoryService {
 
-  private static final String CATEGORIES_FILE_PATH = "data/materials.json";
+  private static final String CATEGORIES_FILE_PATH = "data/categories.json";
   private static List<Category> categories;
 
   static {

@@ -1,7 +1,7 @@
 package com.golod.buildingmaterialscalculator.presentation;
 
-import com.parkcontrol.domain.model.User;
-import com.parkcontrol.service.operations.AuthorizationService;
+import com.golod.buildingmaterialscalculator.domain.model.User;
+import com.golod.buildingmaterialscalculator.service.operations.AuthorizationService;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;

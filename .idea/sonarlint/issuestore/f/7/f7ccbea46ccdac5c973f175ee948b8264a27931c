@@ -1,19 +1,18 @@
 
-i
-java:S1192|"NDefine a constant instead of duplicating this literal "3) ĞĞ°Ğ·Ğ°Ğ´" 3 times.(×…“°üÿÿÿÿ
-“
-java:S11922"}Define a constant instead of duplicating this literal "ĞĞµĞ²Ñ–Ñ€Ğ½Ğ¸Ğ¹ Ğ²Ğ¸Ğ±Ñ–Ñ€. Ğ¡Ğ¿Ñ€Ğ¾Ğ±ÑƒĞ¹Ñ‚Ğµ Ñ‰Ğµ Ñ€Ğ°Ğ·." 7 times.(œ¸Å
-a
-java:S1192J"FDefine a constant instead of duplicating this literal "Admin" 4 times.(Íúì³şÿÿÿÿ
-j
-java:S1192#"TDefine a constant instead of duplicating this literal "Ğ’Ğ°Ñˆ Ğ²Ğ¸Ğ±Ñ–Ñ€: " 7 times.(—¿üï
+Ã
+java:S1192r"{Define a constant instead of duplicating this literal "3) ĞŸĞ¾Ğ²ĞµÑ€Ğ½ÑƒÑ‚Ğ¸ÑÑ Ğ´Ğ¾ Ğ³Ğ¾Ğ»Ğ¾Ğ²Ğ½Ğ¾Ğ³Ğ¾ Ğ¼ĞµĞ½Ñ" 3 times.(œåİÃøÿÿÿÿ8äÇ¸Ø¾2J$5372b0d3-2969-4986-b468-07c055ec83e7
+À
+java:S1192("}Define a constant instead of duplicating this literal "ĞĞµĞ²Ñ–Ñ€Ğ½Ğ¸Ğ¹ Ğ²Ğ¸Ğ±Ñ–Ñ€. Ğ¡Ğ¿Ñ€Ğ¾Ğ±ÑƒĞ¹Ñ‚Ğµ Ñ‰Ğµ Ñ€Ğ°Ğ·." 7 times.(œ¸Å8íŸŒÒ¾2J$6a358bbd-a400-4067-9dbb-20eee0e8a393
+
+java:S1192A"FDefine a constant instead of duplicating this literal "Admin" 4 times.(Íúì³şÿÿÿÿ8îŸŒÒ¾2J$d6235071-c139-49dc-9446-5ce3af49fbd2
 —
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¸§Ó
-g
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(øÉ“8
-H
-java:S6126"2Replace this String concatenation with Text block.(¥ĞÿÄ
-H
-java:S6126>"2Replace this String concatenation with Text block.(†×‰†
-Ú
-java:S6541"ÄA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 92 to 64, Complexity from 18 to 14, Nesting Level from 3 to 2, Number of Variables from 8 to 6.(øÉ“8
+java:S1192"TDefine a constant instead of duplicating this literal "Ğ’Ğ°Ñˆ Ğ²Ğ¸Ğ±Ñ–Ñ€: " 7 times.(—¿üï8îŸŒÒ¾2J$1c99235f-e9ca-4bcd-9670-d7af8fee9913
+Ä
+java:S1186
+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¸§Ó8ğŸŒÒ¾2J$85ee57d3-03e3-4678-b285-c36e71868525
+”
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(øÉ“88öŸŒÒ¾2J$fe524600-9460-4b45-8309-9ae81169088e
+z
+java:S61265"2Replace this String concatenation with Text block.(œÒÿçøÿÿÿÿ8Š¢²Ò¾2J$25bd5d32-f61e-441e-9f7e-16bc233eb34b
+‡
+java:S6541"ÄA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 88 to 64, Complexity from 18 to 14, Nesting Level from 3 to 2, Number of Variables from 7 to 6.(øÉ“88­ ŒÒ¾2J$5c07094c-4eca-44f2-b599-85a553e468c4

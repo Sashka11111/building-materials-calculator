@@ -7,5 +7,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bcrypt-0.3" level="project" />
+    <orderEntry type="library" name="jackson-annotations-2.16.1" level="project" />
+    <orderEntry type="library" name="jackson-core-2.16.1" level="project" />
+    <orderEntry type="library" name="jackson-databind-2.16.1" level="project" />
   </component>
 </module>
