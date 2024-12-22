@@ -12,7 +12,7 @@ public class MaterialValidator {
     List<String> errors = new ArrayList<>();
 
     // Перевірка ідентифікатора
-    if (material.getId() == null || material.getId().isEmpty()) {
+    if (material.getId() == null) {
       errors.add("Ідентифікатор матеріалу не може бути порожнім.");
     }
 

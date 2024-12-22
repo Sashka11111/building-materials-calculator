@@ -1,57 +1,51 @@
-[
-  {
-    "id": "1",
-    "name": "Цемент М400",
-    "unit": "кг",
-    "unitPrice": 8.5,
-    "unitSize": 1,
-    "category": {
-      "id": "d1a82e9b-21fa-4c6e-bbb7-e1efb8f9bb5f",
-      "name": "Цемент"
-    }
-  },
-  {
-    "id": "2",
-    "name": "Цегла червона",
-    "unit": "шт",
-    "unitPrice": 3.2,
-    "unitSize": 1,
-    "category": {
-      "id": "a90f61f1-16b7-4fc4-9f88-b31d0c8bcba9",
-      "name": "Стінові матеріали"
-    }
-  },
-  {
-    "id": "3",
-    "name": "Бетонний блок 20x20x40",
-    "unit": "шт",
-    "unitPrice": 25,
-    "unitSize": 0.16,
-    "category": {
-      "id": "b96a25c3-75c4-4e1f-a19d-0a1c1e3cb6c0",
-      "name": "Стінові матеріали"
-    }
-  },
-  {
-    "id": "4",
-    "name": "Газоблок 60x20x30",
-    "unit": "шт",
-    "unitPrice": 35,
-    "unitSize": 0.36,
-    "category": {
-      "id": "b96a25c3-75c4-4e1f-a19d-0a1c1e3cb6c0",
-      "name": "Стінові матеріали"
-    }
-  },
-  {
-    "id": "5",
-    "name": "Покрівля металочерепиця",
-    "unit": "м2",
-    "unitPrice": 250,
-    "unitSize": 1,
-    "category": {
-      "id": "d04b377f-93d0-4738-b7e7-b56db3b913ed",
-      "name": "Покрівельні матеріали"
-    }
+[ {
+  "id" : "d7f8b831-709b-4f62-9c99-9b5e098fa81a",
+  "name" : "edit",
+  "unit" : "re",
+  "unitPrice" : 43.0,
+  "unitSize" : 6.0,
+  "category" : {
+    "id" : "d1a82e9b-21fa-4c6e-bbb7-e1efb8f9bb5f",
+    "name" : "Цемент"
   }
-]
+}, {
+  "id" : "c1e8f8e1-f12d-4f78-b5e5-bb875dd1b6ab",
+  "name" : "Цегла червона",
+  "unit" : "шт",
+  "unitPrice" : 3.2,
+  "unitSize" : 1.0,
+  "category" : {
+    "id" : "a90f61f1-16b7-4fc4-9f88-b31d0c8bcba9",
+    "name" : "Стінові матеріали"
+  }
+}, {
+  "id" : "a0e2a32b-d62e-4a60-b9ac-7cb6f2d1a45e",
+  "name" : "Бетонний блок 20x20x40",
+  "unit" : "шт",
+  "unitPrice" : 25.0,
+  "unitSize" : 0.16,
+  "category" : {
+    "id" : "b96a25c3-75c4-4e1f-a19d-0a1c1e3cb6c0",
+    "name" : "Стінові матеріали"
+  }
+}, {
+  "id" : "d2f8ac3c-d41d-4236-8d07-9b1bdbb94a69",
+  "name" : "tets",
+  "unit" : "ывы",
+  "unitPrice" : 32.0,
+  "unitSize" : 4.0,
+  "category" : {
+    "id" : "b96a25c3-75c4-4e1f-a19d-0a1c1e3cb6c0",
+    "name" : "Стінові матеріали"
+  }
+}, {
+  "id" : "d6c02f9b-4f5f-4887-ae9b-d0e798a22e22",
+  "name" : "Покрівля металочерепиця",
+  "unit" : "м2",
+  "unitPrice" : 250.0,
+  "unitSize" : 1.0,
+  "category" : {
+    "id" : "d04b377f-93d0-4738-b7e7-b56db3b913ed",
+    "name" : "Покрівельні матеріали"
+  }
+} ]

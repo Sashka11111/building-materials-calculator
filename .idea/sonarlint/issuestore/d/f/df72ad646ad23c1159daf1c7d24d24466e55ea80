@@ -1,0 +1,7 @@
+
+½
+java:S6204?"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ô‡ì÷¾2J$c09819c0-b2ac-41ff-a496-e2503a3f4160
+™
+java:S2159>"VRemove this call to "equals"; comparisons between unrelated types always return false.(ìÚˆð8ô‡ì÷¾2J$b73fa025-8dbc-4a5d-892b-3762760200ec
+¯
+java:S1128	"gRemove this unused import 'com.golod.buildingmaterialscalculator.service.validation.CategoryValidator'.(Ÿ²ˆ€úÿÿÿÿ8ÄÞ”ø¾2J$7128c0b1-5c24-4875-b3fb-d46e187d1b99

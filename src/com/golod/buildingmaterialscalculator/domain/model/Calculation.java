@@ -1,43 +1,45 @@
 package com.golod.buildingmaterialscalculator.domain.model;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.UUID;
 
 public class Calculation {
-  private String id; // Унікальний ідентифікатор розрахунку
-  private String userId; // Ідентифікатор користувача, якому належить розрахунок
+  private UUID id; // Унікальний ідентифікатор розрахунку
+  private UUID userId; // Ідентифікатор користувача, якому належить розрахунок
   private String buildingType; // Тип будівлі
   private double area; // Площа будівлі
   private double perimeter; // Периметр будівлі
-  private List<Category> results; // Список результатів розрахунків
+  private List<Material> results; // Список результатів розрахунків
 
   // Конструктор без параметрів (для використання бібліотек, таких як Jackson)
   public Calculation() {}
 
   // Конструктор з параметрами
-  public Calculation(String id, String userId, String buildingType, double area, double perimeter, List<Category> results) {
+  public Calculation(UUID id, UUID userId, String buildingType, double area, double perimeter, List<Material> results) {
     this.id = id;
     this.userId = userId;
     this.buildingType = buildingType;
     this.area = area;
     this.perimeter = perimeter;
-    this.results = results;
+    this.results = results != null ? results : new ArrayList<>();
   }
 
   // Геттери та сеттери
-  public String getId() {
+  public UUID getId() {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(UUID id) {
     this.id = id;
   }
 
-  public String getUserId() {
+  public UUID getUserId() {
     return userId;
   }
 
-  public void setUserId(String userId) {
+  public void setUserId(UUID userId) {
     this.userId = userId;
   }
 
@@ -65,11 +67,11 @@ public class Calculation {
     this.perimeter = perimeter;
   }
 
-  public List<Category> getResults() {
+  public List<Material> getResults() {
     return results;
   }
 
-  public void setResults(List<Category> results) {
+  public void setResults(List<Material> results) {
     this.results = results;
   }
 

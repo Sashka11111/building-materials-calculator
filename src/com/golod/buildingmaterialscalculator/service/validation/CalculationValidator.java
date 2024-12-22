@@ -12,12 +12,12 @@ public class CalculationValidator {
     List<String> errors = new ArrayList<>();
 
     // Перевірка ідентифікатора
-    if (calculation.getId() == null || calculation.getId().isEmpty()) {
+    if (calculation.getId() == null ) {
       errors.add("Ідентифікатор розрахунку не може бути порожнім.");
     }
 
     // Перевірка ідентифікатора користувача
-    if (calculation.getUserId() == null || calculation.getUserId().isEmpty()) {
+    if (calculation.getUserId() == null) {
       errors.add("Ідентифікатор користувача не може бути порожнім.");
     }
 

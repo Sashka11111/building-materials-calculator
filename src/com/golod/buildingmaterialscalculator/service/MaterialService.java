@@ -6,6 +6,7 @@ import com.golod.buildingmaterialscalculator.domain.model.Material;
 import com.golod.buildingmaterialscalculator.domain.model.Category;
 import com.golod.buildingmaterialscalculator.service.util.JsonDataReader;
 
+import com.golod.buildingmaterialscalculator.service.validation.CategoryValidator;
 import com.golod.buildingmaterialscalculator.service.validation.MaterialValidator;
 import java.io.File;
 import java.io.IOException;
@@ -69,26 +70,28 @@ public class MaterialService {
     System.out.println("Матеріали по категорії:");
     displayMaterials(materialsByCategory);
   }
-
   public static void addMaterial() {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Додавання нового матеріалу");
 
-    String id = getValidatedId(scanner);
     String name = getValidatedName(scanner);
     String unit = getValidatedUnit(scanner);
     double unitPrice = getValidatedUnitPrice(scanner);
     double unitSize = getValidatedUnitSize(scanner);
     String categoryId = getValidatedCategoryId(scanner);
-    UUID categoryUuid = UUID.fromString(categoryId);
-    Category category = findCategoryById(categoryUuid);
+
+    // Генерація унікального UUID
+    UUID materialId = UUID.randomUUID();
+
+    // Пошук категорії за ID
+    Category category = findCategoryById(UUID.fromString(categoryId));
     if (category == null) {
-      System.out.println("Категорія з таким ID не знайдена.");
+      System.out.println("Категорію з таким ID не знайдено. Скасування операції.");
       return;
     }
 
     // Створення нового матеріалу
-    Material newMaterial = new Material(id, name, unit, unitPrice, unitSize, category);
+    Material newMaterial = new Material(materialId, name, unit, unitPrice, unitSize, category);
 
     // Виконання валідації
     List<String> validationErrors = MaterialValidator.validate(newMaterial);
@@ -103,13 +106,7 @@ public class MaterialService {
     materials.add(newMaterial);
     saveMaterialsToJson();
 
-    System.out.println("Новий матеріал додано успішно.");
-  }
-
-
-  private static String getValidatedId(Scanner scanner) {
-    System.out.print("Введіть унікальний ID матеріалу: ");
-    return scanner.nextLine();
+    System.out.println("Новий матеріал додано успішно");
   }
 
   private static String getValidatedName(Scanner scanner) {

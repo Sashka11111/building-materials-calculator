@@ -22,10 +22,6 @@ public class UserValidator {
   public static boolean isLoginUnique(List<User> users, String login) {
     return users.stream().noneMatch(user -> user.getUsername().equalsIgnoreCase(login));
   }
-  // Валідація для перевірки правильності формату категорії
-  public static boolean isValidCategoryName(String name) {
-    return isNotEmpty(name) && name.length() <= 255;
-  }
 
   // Валідація для перевірки правильності введення імені (не порожній рядок та містить хоча б одну букву)
   public static boolean isValidName(String name) {

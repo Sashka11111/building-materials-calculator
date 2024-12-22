@@ -11,6 +11,7 @@ import com.golod.buildingmaterialscalculator.service.validation.UserValidator;
 import java.util.List;
 import java.util.Scanner;
 import java.util.UUID;
+
 public class EditService {
 
   private static final String MATERIALS_FILE_PATH = "data/materials.json"; // Файл для матеріалів
@@ -18,7 +19,6 @@ public class EditService {
 
   // Метод редагування матеріалу
   public static void editMaterial() {
-    // Завантажуємо список матеріалів
     List<Material> materials = JsonDataReader.modelDataJsonReader(MATERIALS_FILE_PATH, Material[].class);
 
     if (materials.isEmpty()) {
@@ -29,14 +29,14 @@ public class EditService {
     Scanner scanner = new Scanner(System.in);
     Material material = null;
 
-    // Поки користувач не введе правильний ID
+    // Пошук матеріалу за ID
     while (material == null) {
       System.out.print("Введіть ID матеріалу для редагування: ");
       String inputId = scanner.nextLine();
 
       if (!UserValidator.isValidUUID(inputId)) {
         System.out.println("Некоректний формат ID. Спробуйте знову.");
-        continue;  // Запитуємо ID знову
+        continue;
       }
 
       UUID materialId = UUID.fromString(inputId);
@@ -50,103 +50,132 @@ public class EditService {
       }
     }
 
-    // Редагуємо назву матеріалу
-    String newMaterialName;
+    // Редагування матеріалу з перевіркою кожного поля
     while (true) {
       System.out.print("Введіть нову назву матеріалу: ");
-      newMaterialName = scanner.nextLine();
+      String newMaterialName = scanner.nextLine();
+      material.setName(newMaterialName);
 
-      // Перевіряємо лише назву матеріалу
-      if (newMaterialName != null && !newMaterialName.isEmpty()) {
-        material.setName(newMaterialName);
-        break;  // Виходимо з циклу, якщо ввід валідний
+      List<String> nameErrors = MaterialValidator.validate(material);
+      if (nameErrors.isEmpty()) {
+        break;
       } else {
-        System.out.println("Некоректна назва матеріалу. Спробуйте знову.");
+        System.out.println("Знайдено помилки у введеній назві:");
+        nameErrors.forEach(error -> System.out.println("- " + error));
       }
     }
 
-
-    // Редагуємо одиницю виміру
-    String newUnit;
     while (true) {
       System.out.print("Введіть нову одиницю виміру (наприклад, 'кг', 'м2', 'шт'): ");
-      newUnit = scanner.nextLine();
+      String newUnit = scanner.nextLine();
+      material.setUnit(newUnit);
 
-      // Перевірка, чи одиниця виміру не порожня
-      if (newUnit != null && !newUnit.isEmpty()) {
-        material.setUnit(newUnit);
-        break;  // Виходимо з циклу, якщо ввід валідний
+      List<String> unitErrors = MaterialValidator.validate(material);
+      if (unitErrors.isEmpty()) {
+        break;
       } else {
-        System.out.println("Одиниця виміру не може бути порожньою. Спробуйте знову.");
+        System.out.println("Знайдено помилки у введеній одиниці виміру:");
+        unitErrors.forEach(error -> System.out.println("- " + error));
       }
     }
 
-
-    // Редагуємо ціну за одиницю
-    String newUnitPrice;
     while (true) {
       System.out.print("Введіть нову ціну матеріалу: ");
-      newUnitPrice = scanner.nextLine();
-
-      if (UserValidator.isValidNumber(newUnitPrice)) {
+      String newUnitPrice = scanner.nextLine();
+      try {
         material.setUnitPrice(Double.parseDouble(newUnitPrice));
-        break;  // Виходимо з циклу, якщо ввід валідний
-      } else {
-        System.out.println("Некоректна ціна матеріалу. Спробуйте знову.");
+
+        List<String> priceErrors = MaterialValidator.validate(material);
+        if (priceErrors.isEmpty()) {
+          break;
+        } else {
+          System.out.println("Знайдено помилки у введеній ціні:");
+          priceErrors.forEach(error -> System.out.println("- " + error));
+        }
+      } catch (NumberFormatException e) {
+        System.out.println("Ціна має бути числом. Спробуйте знову.");
       }
     }
 
-    // Редагуємо розмір одиниці
-    String newUnitSize;
     while (true) {
       System.out.print("Введіть новий розмір одиниці (наприклад, для блоків): ");
-      newUnitSize = scanner.nextLine();
-
-      if (UserValidator.isValidNumber(newUnitSize)) {
+      String newUnitSize = scanner.nextLine();
+      try {
         material.setUnitSize(Double.parseDouble(newUnitSize));
-        break;  // Виходимо з циклу, якщо ввід валідний
-      } else {
-        System.out.println("Некоректний розмір одиниці. Спробуйте знову.");
-      }
-    }
-// Редагуємо категорію
-    List<Category> categories = JsonDataReader.modelDataJsonReader(CATEGORIES_FILE_PATH, Category[].class);
-    String newCategoryName;
-    while (true) {
-      System.out.print("Введіть нову категорію: ");
-      newCategoryName = scanner.nextLine();
 
-      if (CategoryValidator.isValidCategoryName(newCategoryName)) {
-        // Шукаємо категорію за допомогою звичайного циклу замість лямбда-виразу
-        Category category = null;
-        for (Category c : categories) {
-          if (c.getName().equalsIgnoreCase(newCategoryName)) {
-            category = c;
-            break;
-          }
-        }
-
-        if (category != null) {
-          material.setCategory(category);
-          break;  // Виходимо з циклу, якщо категорія знайдена
+        List<String> sizeErrors = MaterialValidator.validate(material);
+        if (sizeErrors.isEmpty()) {
+          break;
         } else {
-          System.out.println("Категорія не знайдена. Спробуйте ще раз.");
+          System.out.println("Знайдено помилки у введеному розмірі одиниці:");
+          sizeErrors.forEach(error -> System.out.println("- " + error));
         }
-      } else {
-        System.out.println("Некоректна категорія. Спробуйте знову.");
+      } catch (NumberFormatException e) {
+        System.out.println("Розмір одиниці має бути числом. Спробуйте знову.");
       }
     }
 
-    // Перевірка на помилки
-    List<String> materialErrors = MaterialValidator.validate(material);
-    if (!materialErrors.isEmpty()) {
-      System.out.println("Помилки в матеріалі:");
-      materialErrors.forEach(System.out::println);
-      return; // Виходимо, якщо є помилки
+    // Остаточна валідація всього матеріалу перед збереженням
+    List<String> finalErrors = MaterialValidator.validate(material);
+    if (!finalErrors.isEmpty()) {
+      System.out.println("Помилки при збереженні матеріалу:");
+      finalErrors.forEach(error -> System.out.println("- " + error));
+      return; // Якщо є помилки, припиняємо збереження
     }
 
-    // Зберігаємо оновлений список матеріалів у файл
+    // Збереження оновлень
     FileUtil.saveToFile(MATERIALS_FILE_PATH, materials);
     System.out.println("Матеріал успішно оновлено.");
+  }
+
+  // Метод редагування категорії паркування
+  public static void editCategory() {
+    List<Category> categories = JsonDataReader.modelDataJsonReader(CATEGORIES_FILE_PATH, Category[].class);
+
+    if (categories.isEmpty()) {
+      System.out.println("Список категорій порожній.");
+      return;
+    }
+
+    Scanner scanner = new Scanner(System.in);
+    Category category = null;
+
+    // Поки користувач не введе правильний ID
+    while (category == null) {
+      System.out.print("Введіть ID категорії для редагування: ");
+      String inputId = scanner.nextLine();
+
+      if (!UserValidator.isValidUUID(inputId)) {
+        System.out.println("Некоректний формат ID. Спробуйте знову.");
+        continue;  // Запитуємо ID знову
+      }
+
+      UUID categoryId = UUID.fromString(inputId);
+      category = categories.stream()
+          .filter(c -> c.getId().equals(categoryId))
+          .findFirst()
+          .orElse(null);
+
+      if (category == null) {
+        System.out.println("Категорія з таким ID не знайдена. Спробуйте ще раз.");
+      }
+    }
+
+    // Редагуємо назву категорії
+    String newName;
+    while (true) {
+      System.out.print("Введіть нову назву категорії: ");
+      newName = scanner.nextLine();
+
+      if (CategoryValidator.isValidCategoryName(newName)) {
+        category.setName(newName);
+        break;  // Виходимо з циклу, якщо ввід валідний
+      } else {
+        System.out.println("Некоректна назва категорії. Спробуйте знову.");
+      }
+    }
+
+    FileUtil.saveToFile(CATEGORIES_FILE_PATH, categories);
+    System.out.println("Категорію успішно оновлено.");
   }
 }

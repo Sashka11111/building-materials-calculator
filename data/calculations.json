@@ -1,171 +1,156 @@
 [
   {
-    "id": "1",
-    "userId": "user123",
+    "id": "a0df78b9-dbe4-4d55-bc34-8f1fae3fae2c",
+    "userId": "b6a8e1f0-3d92-4e7f-85f8-17e8cf0d2e91",
     "buildingType": "Житловий будинок",
     "area": 120.5,
     "perimeter": 50.2,
     "results": [
       {
-        "id": "1",
-        "category": "Цемент"
+        "id": "d7f8b831-709b-4f62-9c99-9b5e098fa81a",
+        "name": "Цемент М400",
+        "unit": "кг",
+        "unitPrice": 8.5,
+        "unitSize": 1,
+        "category": {
+          "id": "d1a82e9b-21fa-4c6e-bbb7-e1efb8f9bb5f",
+          "name": "Цемент"
+        }
       },
       {
-        "id": "2",
-        "category": "Стінові матеріали"
+        "id": "c1e8f8e1-f12d-4f78-b5e5-bb875dd1b6ab",
+        "name": "Цегла червона",
+        "unit": "шт",
+        "unitPrice": 3.2,
+        "unitSize": 1,
+        "category": {
+          "id": "a90f61f1-16b7-4fc4-9f88-b31d0c8bcba9",
+          "name": "Стінові матеріали"
+        }
       }
     ]
   },
   {
-    "id": "2",
-    "userId": "user456",
+    "id": "d459cbef-4a9f-48d2-a4e4-12c392be33f3",
+    "userId": "c2b8f9e7-48e7-4d0f-b0fc-2d6a77b8d543",
     "buildingType": "Комерційна будівля",
     "area": 200.0,
     "perimeter": 70.5,
     "results": [
       {
-        "id": "3",
-        "category": "Стінові матеріали"
+        "id": "c1e8f8e1-f12d-4f78-b5e5-bb875dd1b6ab",
+        "name": "Цегла червона",
+        "unit": "шт",
+        "unitPrice": 3.2,
+        "unitSize": 1,
+        "category": {
+          "id": "a90f61f1-16b7-4fc4-9f88-b31d0c8bcba9",
+          "name": "Стінові матеріали"
+        }
       },
       {
-        "id": "4",
-        "category": "Покрівельні матеріали"
+        "id": "d6c02f9b-4f5f-4887-ae9b-d0e798a22e22",
+        "name": "Покрівля металочерепиця",
+        "unit": "м2",
+        "unitPrice": 250,
+        "unitSize": 1,
+        "category": {
+          "id": "d04b377f-93d0-4738-b7e7-b56db3b913ed",
+          "name": "Покрівельні матеріали"
+        }
       }
     ]
   },
   {
-    "id": "3",
-    "userId": "user789",
+    "id": "9fdcb1da-38c2-4293-b264-4f67f2769da1",
+    "userId": "d1a9f8b6-5b6d-4e69-b3c9-3b6a1a7e2cd8",
     "buildingType": "Офісна будівля",
     "area": 350.75,
     "perimeter": 90.0,
     "results": [
       {
-        "id": "5",
-        "category": "Підлогові покриття"
+        "id": "a0e2a32b-d62e-4a60-b9ac-7cb6f2d1a45e",
+        "name": "Бетонний блок 20x20x40",
+        "unit": "шт",
+        "unitPrice": 25,
+        "unitSize": 0.16,
+        "category": {
+          "id": "b96a25c3-75c4-4e1f-a19d-0a1c1e3cb6c0",
+          "name": "Стінові матеріали"
+        }
       },
       {
-        "id": "6",
-        "category": "Штукатурка"
+        "id": "d7f8b831-709b-4f62-9c99-9b5e098fa81a",
+        "name": "Цемент М400",
+        "unit": "кг",
+        "unitPrice": 8.5,
+        "unitSize": 1,
+        "category": {
+          "id": "d1a82e9b-21fa-4c6e-bbb7-e1efb8f9bb5f",
+          "name": "Цемент"
+        }
       }
     ]
   },
   {
-    "id": "4",
-    "userId": "user101",
+    "id": "6e6bcb9d-d2ff-47ca-b482-e9e85f3ae54b",
+    "userId": "f7a6c2b5-1e3d-43b2-b1b7-2b9f9e1f9b23",
     "buildingType": "Склад",
     "area": 500.0,
     "perimeter": 120.0,
     "results": [
       {
-        "id": "7",
-        "category": "Додаткові матеріали"
+        "id": "d7f8b831-709b-4f62-9c99-9b5e098fa81a",
+        "name": "Цемент М400",
+        "unit": "кг",
+        "unitPrice": 8.5,
+        "unitSize": 1,
+        "category": {
+          "id": "d1a82e9b-21fa-4c6e-bbb7-e1efb8f9bb5f",
+          "name": "Цемент"
+        }
       },
       {
-        "id": "8",
-        "category": "Цемент"
+        "id": "b96a25c3-75c4-4e1f-a19d-0a1c1e3cb6c0",
+        "name": "Газоблок 60x20x30",
+        "unit": "шт",
+        "unitPrice": 35,
+        "unitSize": 0.36,
+        "category": {
+          "id": "b96a25c3-75c4-4e1f-a19d-0a1c1e3cb6c0",
+          "name": "Стінові матеріали"
+        }
       }
     ]
   },
   {
-    "id": "5",
-    "userId": "user202",
+    "id": "54cf5638-b501-4338-9e0f-41b228321d2f",
+    "userId": "8b037680-84bb-4c64-91aa-4ca94e0fdf79",
     "buildingType": "Гараж",
     "area": 45.3,
     "perimeter": 30.0,
     "results": [
       {
-        "id": "9",
-        "category": "Стінові матеріали"
+        "id": "b96a25c3-75c4-4e1f-a19d-0a1c1e3cb6c0",
+        "name": "Газоблок 60x20x30",
+        "unit": "шт",
+        "unitPrice": 35,
+        "unitSize": 0.36,
+        "category": {
+          "id": "b96a25c3-75c4-4e1f-a19d-0a1c1e3cb6c0",
+          "name": "Стінові матеріали"
+        }
       },
       {
-        "id": "10",
-        "category": "Додаткові матеріали"
-      }
-    ]
-  },
-  {
-    "id": "6",
-    "userId": "user303",
-    "buildingType": "Житловий будинок",
-    "area": 150.0,
-    "perimeter": 55.0,
-    "results": [
-      {
-        "id": "1",
-        "category": "Цемент"
-      },
-      {
-        "id": "5",
-        "category": "Покрівельні матеріали"
-      }
-    ]
-  },
-  {
-    "id": "7",
-    "userId": "user404",
-    "buildingType": "Комерційна будівля",
-    "area": 250.5,
-    "perimeter": 85.0,
-    "results": [
-      {
-        "id": "6",
-        "category": "Штукатурка"
-      },
-      {
-        "id": "2",
-        "category": "Стінові матеріали"
-      }
-    ]
-  },
-  {
-    "id": "8",
-    "userId": "user505",
-    "buildingType": "Офісна будівля",
-    "area": 300.0,
-    "perimeter": 95.0,
-    "results": [
-      {
-        "id": "8",
-        "category": "Цемент"
-      },
-      {
-        "id": "7",
-        "category": "Додаткові матеріали"
-      }
-    ]
-  },
-  {
-    "id": "9",
-    "userId": "user606",
-    "buildingType": "Склад",
-    "area": 600.0,
-    "perimeter": 130.0,
-    "results": [
-      {
-        "id": "3",
-        "category": "Стінові матеріали"
-      },
-      {
-        "id": "10",
-        "category": "Додаткові матеріали"
-      }
-    ]
-  },
-  {
-    "id": "10",
-    "userId": "user707",
-    "buildingType": "Гараж",
-    "area": 40.0,
-    "perimeter": 28.5,
-    "results": [
-      {
-        "id": "4",
-        "category": "Покрівельні матеріали"
-      },
-      {
-        "id": "9",
-        "category": "Стінові матеріали"
+        "id": "d6c02f9b-4f5f-4887-ae9b-d0e798a22e22",
+        "name": "Покрівля металочерепиця",
+        "unit": "м2",
+        "unitPrice": 250,
+        "unitSize": 1,
+        "category": {
+          "id": "d04b377f-93d0-4738-b7e7-b56db3b913ed",
+          "name": "Покрівельні матеріали"
+        }
       }
     ]
   }

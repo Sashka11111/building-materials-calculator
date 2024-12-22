@@ -1,18 +1,22 @@
 package com.golod.buildingmaterialscalculator.domain.model;
 
 import java.util.Objects;
+import java.util.UUID;
 
 public class Material {
-  private String id; // Унікальний ідентифікатор матеріалу
+  private UUID id; // Унікальний ідентифікатор матеріалу (UUID)
   private String name; // Назва матеріалу
   private String unit; // Одиниця виміру (наприклад, "кг", "шт", "м2")
   private double unitPrice; // Ціна за одиницю
   private double unitSize; // Розмір одиниці (для блоків, покрівлі тощо)
-  private Category category; // Категорія, яка є об'єктом класу Category
+
+  private Category category;
 
   public Material() {
   }
-  public Material(String id, String name, String unit, double unitPrice, double unitSize, Category category) {
+
+  // Оновлений конструктор з UUID для id
+  public Material(UUID id, String name, String unit, double unitPrice, double unitSize, Category category) {
     this.id = id;
     this.name = name;
     this.unit = unit;
@@ -22,11 +26,11 @@ public class Material {
   }
 
   // Гетери та сетери
-  public String getId() {
+  public UUID getId() {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(UUID id) {
     this.id = id;
   }
 
@@ -91,7 +95,7 @@ public class Material {
   @Override
   public String toString() {
     return "Material{" +
-        "id='" + id + '\'' +
+        "id=" + id +
         ", name='" + name + '\'' +
         ", unit='" + unit + '\'' +
         ", unitPrice=" + unitPrice +

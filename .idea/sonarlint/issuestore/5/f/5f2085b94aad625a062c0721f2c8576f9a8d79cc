@@ -1,4 +1,12 @@
 
  	java:S1359"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8ùñĞ«º2J$da636e50-0e8a-4c28-9fc6-cba42d74e1d7
+M
+java:S2440"0Remove this instantiation of "UserInputHandler".(€Û—Ë8î¶¹ñ¾2
+W
+java:S2209>"5Change this instance-reference to a static reference.(ºÚÇØûÿÿÿÿ8ş¶¹ñ¾2
 y
 java:S6880@"6Replace the chain of if/else with a switch expression.(˜ÙÄ¶8„òĞ«º2J$8c9e6908-3ab5-45c3-a31b-ed2c9a72ec1b
+W
+java:S2209P"5Change this instance-reference to a static reference.(Ä¢ûÅûÿÿÿÿ8ƒ·¹ñ¾2
+W
+java:S2209]"5Change this instance-reference to a static reference.(çºñœûÿÿÿÿ8ƒ·¹ñ¾2
