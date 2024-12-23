@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="building-materials-calculator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/building_materials_calculator_jar</output-path>
+    <root id="archive" name="building-materials-calculator.jar">
+      <element id="module-output" name="building-materials-calculator" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jackson-core-2.16.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jackson-annotations-2.16.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jackson-databind-2.16.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/bcrypt-0.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -24,7 +24,6 @@ public class SearchService {
     return result;
   }
 
-  // Пошук категорії за назвою
 // Пошук категорії за назвою
   public Category searchCategoryByName(String categoryName) {
     List<Category> categories = loadCategories();

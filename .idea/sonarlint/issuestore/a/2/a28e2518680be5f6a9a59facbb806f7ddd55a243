@@ -1,0 +1,39 @@
+
+«
+java:S1192"cDefine a constant instead of duplicating this literal "Ğ’Ğ²ĞµĞ´Ñ–Ñ‚ÑŒ Ğ¿Ğ»Ğ¾Ñ‰Ñƒ (Ğ¼Â²): " 3 times.(ğÉ÷Ìşÿÿÿÿ8•±Şı¾2J$789a6f6a-370a-4a86-a465-2f04ab53aea3
+}
+java:S2209"5Change this instance-reference to a static reference.(ğÉ÷Ìşÿÿÿÿ8¢±Şı¾2J$70b90c86-24b3-4f8e-b203-a69f27f83c23
+x
+java:S2440"0Remove this instantiation of "UserInputHandler".(ğÉ÷Ìşÿÿÿÿ8¢±Şı¾2J$e2fdc618-04c4-4d02-b7c8-9e1c836b77c2
+™
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(ÉÍ½Ïşÿÿÿÿ8¤±Şı¾2J$926ac953-ae61-4746-9dbb-02ae78f23895
+}
+java:S2209"5Change this instance-reference to a static reference.(ğÉ÷Ìşÿÿÿÿ8¥±Şı¾2J$eb1c7cc6-23c5-4025-800c-9554e07bcf71
+x
+java:S2440"0Remove this instantiation of "UserInputHandler".(ğÉ÷Ìşÿÿÿÿ8¥±Şı¾2J$6587abd6-9001-412c-97c7-3ef0d59c2bbe
+}
+java:S2209"5Change this instance-reference to a static reference.(œ‚‡ßüÿÿÿÿ8§±Şı¾2J$1a5e2b99-9891-4f71-a380-0c86e5bba8e0
+x
+java:S2440"0Remove this instantiation of "UserInputHandler".(œ‚‡ßüÿÿÿÿ8§±Şı¾2J$c5ff2732-dc8c-4d84-8ecc-21c2f3920ef6
+™
+java:S3457 "Q%n should be used in place of \n to produce the platform-specific line separator.(‘æ÷Èøÿÿÿÿ8¨±Şı¾2J$2df38ad1-582b-46a3-a0fc-6301e827df57
+x
+java:S2209$"5Change this instance-reference to a static reference.(›¯ä’8ª±Şı¾2J$fb0420bd-7d67-4bfc-88a7-6d6368b93b71
+s
+java:S2440$"0Remove this instantiation of "UserInputHandler".(›¯ä’8ª±Şı¾2J$806575f0-f2a6-4139-b50a-2f6946534f31
+”
+java:S3457&"Q%n should be used in place of \n to produce the platform-specific line separator.(š±†¾8¬±Şı¾2J$6e705255-6562-483b-b252-648303b34cdf
+}
+java:S2209*"5Change this instance-reference to a static reference.(ğÉ÷Ìşÿÿÿÿ8¬±Şı¾2J$20bc63bf-a12e-4e80-bebf-a0d3706417a6
+x
+java:S2440*"0Remove this instantiation of "UserInputHandler".(ğÉ÷Ìşÿÿÿÿ8¬±Şı¾2J$4e17a51c-1c0c-4c0e-a808-fa321d89cbc9
+™
+java:S3457,"Q%n should be used in place of \n to produce the platform-specific line separator.(ã··¤ıÿÿÿÿ8¬±Şı¾2J$d8b5501e-002d-4494-98a3-51693dcb3b15
+}
+java:S22090"5Change this instance-reference to a static reference.(çÕñøÿÿÿÿ8¯±Şı¾2J$859eed05-3678-4cd0-b955-f5efdfa87768
+x
+java:S24400"0Remove this instantiation of "UserInputHandler".(çÕñøÿÿÿÿ8¯±Şı¾2J$47e1462e-be67-475e-8d27-9300875eb8ac
+”
+java:S34572"Q%n should be used in place of \n to produce the platform-specific line separator.(¹Ù–Š8¯±Şı¾2J$46f5ca70-82a4-420b-8145-5aeb2a9c9f81
+½
+java:S6204D"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8»·„ÿ¾2J$b606930f-bc57-4b9d-ad24-b1891fdc1a9a

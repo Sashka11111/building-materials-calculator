@@ -40,7 +40,6 @@ public class MaterialValidator {
     if (material.getCategory() == null) {
       errors.add("Категорія матеріалу не може бути порожньою.");
     }
-
     return errors; // Повертає список помилок (якщо є)
   }
 }

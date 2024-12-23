@@ -6,14 +6,12 @@ import com.golod.buildingmaterialscalculator.domain.model.Material;
 import com.golod.buildingmaterialscalculator.domain.model.Category;
 import com.golod.buildingmaterialscalculator.service.util.JsonDataReader;
 
-import com.golod.buildingmaterialscalculator.service.validation.CategoryValidator;
 import com.golod.buildingmaterialscalculator.service.validation.MaterialValidator;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 public class MaterialService {
 
@@ -56,20 +54,6 @@ public class MaterialService {
         .orElse(null);
   }
 
-
-  public static void displayMaterialsByCategory(String categoryId) {
-    List<Material> materialsByCategory = materials.stream()
-        .filter(material -> material.getCategory().getId().equals(categoryId))
-        .collect(Collectors.toList());
-
-    if (materialsByCategory.isEmpty()) {
-      System.out.println("Не знайдено матеріалів для даної категорії.");
-      return;
-    }
-
-    System.out.println("Матеріали по категорії:");
-    displayMaterials(materialsByCategory);
-  }
   public static void addMaterial() {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Додавання нового матеріалу");

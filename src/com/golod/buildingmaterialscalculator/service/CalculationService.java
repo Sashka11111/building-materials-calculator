@@ -1,44 +1,59 @@
 package com.golod.buildingmaterialscalculator.service;
 
-import com.golod.buildingmaterialscalculator.domain.model.Calculation;
 import com.golod.buildingmaterialscalculator.domain.model.Material;
-import com.golod.buildingmaterialscalculator.presentation.Application;
 import com.golod.buildingmaterialscalculator.service.util.JsonDataReader;
 
+import com.golod.buildingmaterialscalculator.service.validation.UserInputHandler;
 import java.util.List;
-import java.util.UUID;
 import java.util.stream.Collectors;
 
 public class CalculationService {
-
-  private static final String CALCULATIONS_FILE_PATH = "data/calculations.json";
   private static final String MATERIALS_FILE_PATH = "data/materials.json";
 
   private static List<Material> materials;
-  private static List<Calculation> calculations;
 
   static {
     // Читання даних з файлів
     materials = JsonDataReader.modelDataJsonReader(MATERIALS_FILE_PATH, Material[].class);
-    calculations = JsonDataReader.modelDataJsonReader(CALCULATIONS_FILE_PATH, Calculation[].class);
   }
 
-  public static void main(String[] args) {
-    // Тестування
-    CalculationService service = new CalculationService();
-    service.displayUserCalculations();
-  }
 
-  // Метод для отримання розрахунків для конкретного користувача
-  public List<Calculation> getUserCalculations(UUID userId) {
-    return calculations.stream()
-        .filter(calculation -> calculation.getUserId().equals(userId))  // Фільтруємо за userId
-        .collect(Collectors.toList());  // Перетворюємо у список
-  }
-  // Розрахунок кількості цементної суміші для будівництва (площу помножити на коефіцієнт)
-  public static double calculateCement(double area) {
-    return area * 0.2; // Приклад: 0.2 одиниці цементної суміші на 1 м²
-  }
+    public void calculateCement() {
+      double area = new UserInputHandler().getDoubleInput("Введіть площу (м²): ");
+      double cement = calculateCementAmount(area);
+      System.out.printf("Необхідна кількість цементної суміші: %.2f одиниць\n", cement);
+    }
+
+    public void calculateWallMaterials() {
+      double area = new UserInputHandler().getDoubleInput("Введіть площу (м²): ");
+      double perimeter = new UserInputHandler().getDoubleInput("Введіть периметр (м): ");
+      List<Material> wallMaterials = calculateWallMaterials(area, perimeter);
+      wallMaterials.forEach(material ->
+          System.out.printf("Матеріал: %s, Кількість: %.2f\n", material.getName(), material.getUnitSize()));
+    }
+
+    public void calculateRoofingMaterial() {
+      double roofArea = new UserInputHandler().getDoubleInput("Введіть площу даху (м²): ");
+      double roofing = calculateRoofingAmount(roofArea);
+      System.out.printf("Необхідна кількість покрівельного матеріалу: %.2f одиниць\n", roofing);
+    }
+
+    public void calculateFlooring() {
+      double area = new UserInputHandler().getDoubleInput("Введіть площу (м²): ");
+      double flooring = calculateFlooringAmount(area);
+      System.out.printf("Необхідна кількість підлогового покриття: %.2f одиниць\n", flooring);
+    }
+
+    public void calculatePlaster() {
+      double area = new UserInputHandler().getDoubleInput("Введіть площу стін (м²): ");
+      double plaster = calculatePlasterAmount(area);
+      System.out.printf("Необхідна кількість штукатурки: %.2f одиниць\n", plaster);
+    }
+
+    // Приватні методи для виконання розрахунків
+    private double calculateCementAmount(double area) {
+      return area * 0.2; // 0.2 одиниці цементу на 1 м²
+    }
 
   // Розрахунок кількості матеріалів для стін (бетонний блок, цегла, газоблок)
   public static List<Material> calculateWallMaterials(double area, double perimeter) {
@@ -53,46 +68,15 @@ public class CalculationService {
         .collect(Collectors.toList());
   }
 
-  // Розрахунок кількості покрівельного матеріалу
-  public static double calculateRoofingMaterial(double roofArea) {
-    return roofArea * 1.5;  // Приклад: 1.5 одиниці матеріалу на 1 м² даху
-  }
-
-  // Розрахунок кількості підлогового покриття
-  public static double calculateFlooring(double area) {
-    return area * 1.2; // Приклад: 1.2 одиниці матеріалу на 1 м² підлоги
-  }
-
-  // Розрахунок штукатурки для стін
-  public static double calculatePlaster(double area) {
-    return area * 0.1; // Приклад: 0.1 одиниці штукатурки на 1 м²
-  }
-
-
-  public static void displayUserCalculations() {
-    UUID userId = Application.currentUser.getUserId();
-    // Фільтруємо розрахунки за userId
-    CalculationService service = new CalculationService();
-    List<Calculation> userCalculations = service.getUserCalculations(userId);
-
-    if (userCalculations.isEmpty()) {
-      System.out.println("Немає розрахунків для цього користувача.");
-    } else {
-      userCalculations.forEach(calculation -> {
-        System.out.println("ID: " + calculation.getId());
-        System.out.println("Тип будівлі: " + calculation.getBuildingType());
-        System.out.println("Площа: " + calculation.getArea());
-        System.out.println("Периметр: " + calculation.getPerimeter());
-        System.out.println("Результати:");
-
-        // Виведення результатів, якщо це список Material
-        calculation.getResults().forEach(material -> {
-          // Використовуємо метод getUnitSize для класу Material
-          System.out.println("Матеріал: " + material.getName() + " - Кількість: " + material.getUnitSize());
-        });
-
-        System.out.println();
-      });
+    private double calculateRoofingAmount(double roofArea) {
+      return roofArea * 1.5; // 1.5 одиниці матеріалу на 1 м²
     }
-  }
+
+    private double calculateFlooringAmount(double area) {
+      return area * 1.2; // 1.2 одиниці матеріалу на 1 м²
+    }
+
+    private double calculatePlasterAmount(double area) {
+      return area * 0.1; // 0.1 одиниці штукатурки на 1 м²
+    }
 }

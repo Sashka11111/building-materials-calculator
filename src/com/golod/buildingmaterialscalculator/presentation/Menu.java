@@ -139,9 +139,8 @@ public class Menu {
 
   private static void showViewMenu() {
     System.out.println("1) Переглянути матеріали");
-    System.out.println("2) Переглянути мої розрахунки");
-    System.out.println("3) Переглянути категорії");
-    System.out.println("4) Повернутися до головного меню");
+    System.out.println("2) Переглянути категорії");
+    System.out.println("3) Повернутися до головного меню");
 
     int choice = new UserInputHandler().getIntInput("Ваш вибір: ");
 
@@ -150,12 +149,9 @@ public class Menu {
         MaterialService.main(new String[]{});
         break;
       case 2:
-        CalculationService.main(new String[]{});
-        break;
-      case 3:
         CategoryService.main(new String[]{});
         break;
-      case 4:
+      case 3:
         return;
       default:
         System.out.println("Невірний вибір. Спробуйте ще раз.");
@@ -173,46 +169,25 @@ public class Menu {
       System.out.print("Оберіть пункт меню: ");
 
       int choice = new UserInputHandler().getIntInput("Ваш вибір: ");
-      double area, perimeter, roofArea;
-
+      CalculationService calculationService = new CalculationService();
       switch (choice) {
         case 1:
-          // Розрахунок цементної суміші
-          area = new UserInputHandler().getDoubleInput("Введіть площу (м²): ");
-          double cement = CalculationService.calculateCement(area); // Використовуємо метод для цементу
-          System.out.printf("Необхідна кількість цементної суміші: %.2f одиниць\n", cement);
+          calculationService.calculateCement();
           break;
-
         case 2:
-          // Розрахунок матеріалів для стін
-          area = new UserInputHandler().getDoubleInput("Введіть площу (м²): ");
-          perimeter = new UserInputHandler().getDoubleInput("Введіть периметр (м): ");
-          List<Material> wallMaterials = CalculationService.calculateWallMaterials(area, perimeter); // Розрахунок матеріалів для стін
-          wallMaterials.forEach(material ->
-              System.out.printf("Матеріал: %s, Кількість: %.2f\n", material.getName(), material.getUnitSize())); // Виведення результатів
+          calculationService.calculateWallMaterials();
           break;
-
         case 3:
-          // Розрахунок покрівельного матеріалу
-          roofArea = new UserInputHandler().getDoubleInput("Введіть площу даху (м²): ");
-          double roofing = CalculationService.calculateRoofingMaterial(roofArea); // Розрахунок покрівлі
-          System.out.printf("Необхідна кількість покрівельного матеріалу: %.2f одиниць\n", roofing);
+          calculationService.calculateRoofingMaterial();
           break;
         case 4:
-          // Розрахунок підлогового покриття
-          area = new UserInputHandler().getDoubleInput("Введіть площу (м²): ");
-          double flooring = CalculationService.calculateFlooring(area); // Розрахунок підлогового покриття
-          System.out.printf("Необхідна кількість підлогового покриття: %.2f одиниць\n", flooring);
+          calculationService.calculateFlooring();
           break;
-
         case 5:
-          // Розрахунок штукатурки для стін
-          area = new UserInputHandler().getDoubleInput("Введіть площу стін (м²): ");
-          double plaster = CalculationService.calculatePlaster(area); // Розрахунок штукатурки
-          System.out.printf("Необхідна кількість штукатурки: %.2f одиниць\n", plaster);
+          calculationService.calculatePlaster();
           break;
         case 6:
-          return; // Повертаємося до головного меню
+          return; // Вихід до головного меню
         default:
           System.out.println("Невірний вибір. Спробуйте ще раз.");
       }
