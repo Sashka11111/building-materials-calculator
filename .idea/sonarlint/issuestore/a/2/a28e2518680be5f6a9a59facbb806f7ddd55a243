@@ -1,39 +1,43 @@
 
 «
-java:S1192"cDefine a constant instead of duplicating this literal "Ğ’Ğ²ĞµĞ´Ñ–Ñ‚ÑŒ Ğ¿Ğ»Ğ¾Ñ‰Ñƒ (Ğ¼Â²): " 3 times.(ğÉ÷Ìşÿÿÿÿ8•±Şı¾2J$789a6f6a-370a-4a86-a465-2f04ab53aea3
+java:S1192"cDefine a constant instead of duplicating this literal "Ğ’Ğ²ĞµĞ´Ñ–Ñ‚ÑŒ Ğ¿Ğ»Ğ¾Ñ‰Ñƒ (Ğ¼Â²): " 3 times.(ğÉ÷Ìşÿÿÿÿ8Í®Ş•¿2J$62fedf7e-cae9-4c53-938c-216aca7de16b
 }
-java:S2209"5Change this instance-reference to a static reference.(ğÉ÷Ìşÿÿÿÿ8¢±Şı¾2J$70b90c86-24b3-4f8e-b203-a69f27f83c23
+java:S2209"5Change this instance-reference to a static reference.(ğÉ÷Ìşÿÿÿÿ8×®Ş•¿2J$cc8d8857-8ce4-4c1d-904e-ea0e83cd830a
 x
-java:S2440"0Remove this instantiation of "UserInputHandler".(ğÉ÷Ìşÿÿÿÿ8¢±Şı¾2J$e2fdc618-04c4-4d02-b7c8-9e1c836b77c2
+java:S2440"0Remove this instantiation of "UserInputHandler".(ğÉ÷Ìşÿÿÿÿ8×®Ş•¿2J$c3d0fc5c-a797-41b0-b2ba-9c0fb7cb1f30
 ™
-java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(ÉÍ½Ïşÿÿÿÿ8¤±Şı¾2J$926ac953-ae61-4746-9dbb-02ae78f23895
-}
-java:S2209"5Change this instance-reference to a static reference.(ğÉ÷Ìşÿÿÿÿ8¥±Şı¾2J$eb1c7cc6-23c5-4025-800c-9554e07bcf71
-x
-java:S2440"0Remove this instantiation of "UserInputHandler".(ğÉ÷Ìşÿÿÿÿ8¥±Şı¾2J$6587abd6-9001-412c-97c7-3ef0d59c2bbe
-}
-java:S2209"5Change this instance-reference to a static reference.(œ‚‡ßüÿÿÿÿ8§±Şı¾2J$1a5e2b99-9891-4f71-a380-0c86e5bba8e0
-x
-java:S2440"0Remove this instantiation of "UserInputHandler".(œ‚‡ßüÿÿÿÿ8§±Şı¾2J$c5ff2732-dc8c-4d84-8ecc-21c2f3920ef6
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(ÉÍ½Ïşÿÿÿÿ8Ù®Ş•¿2J$d1e48e8f-4f46-4ff2-9815-4213c09860c2
 ™
-java:S3457 "Q%n should be used in place of \n to produce the platform-specific line separator.(‘æ÷Èøÿÿÿÿ8¨±Şı¾2J$2df38ad1-582b-46a3-a0fc-6301e827df57
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(Ñ¿î»ùÿÿÿÿ8Ä“‰š¿2J$3102e01d-23a7-4591-a67e-11be8b9396bb
 x
-java:S2209$"5Change this instance-reference to a static reference.(›¯ä’8ª±Şı¾2J$fb0420bd-7d67-4bfc-88a7-6d6368b93b71
+java:S2209!"5Change this instance-reference to a static reference.(ô¿¾8œ·ı™¿2J$e08450d6-cdcc-4f88-bb22-d4872f4370c3
 s
-java:S2440$"0Remove this instantiation of "UserInputHandler".(›¯ä’8ª±Şı¾2J$806575f0-f2a6-4139-b50a-2f6946534f31
-”
-java:S3457&"Q%n should be used in place of \n to produce the platform-specific line separator.(š±†¾8¬±Şı¾2J$6e705255-6562-483b-b252-648303b34cdf
+java:S2440!"0Remove this instantiation of "UserInputHandler".(ô¿¾8œ·ı™¿2J$59575e4b-322e-49e6-bf59-14d4b50cfc4c
 }
-java:S2209*"5Change this instance-reference to a static reference.(ğÉ÷Ìşÿÿÿÿ8¬±Şı¾2J$20bc63bf-a12e-4e80-bebf-a0d3706417a6
+java:S2209%"5Change this instance-reference to a static reference.(ğÉ÷Ìşÿÿÿÿ8·ı™¿2J$71437acc-59b6-4a97-acd0-533d3f5f1a32
 x
-java:S2440*"0Remove this instantiation of "UserInputHandler".(ğÉ÷Ìşÿÿÿÿ8¬±Şı¾2J$4e17a51c-1c0c-4c0e-a808-fa321d89cbc9
+java:S2440%"0Remove this instantiation of "UserInputHandler".(ğÉ÷Ìşÿÿÿÿ8·ı™¿2J$4133eb13-16c1-4797-a7ec-9787cfc7f041
+}
+java:S2209&"5Change this instance-reference to a static reference.(œ‚‡ßüÿÿÿÿ8¤·ı™¿2J$60cc5d0d-2412-4416-9b4f-301e947e8440
+x
+java:S2440&"0Remove this instantiation of "UserInputHandler".(œ‚‡ßüÿÿÿÿ8¤·ı™¿2J$2228452b-6ee3-4a52-ae14-17175bbb6d96
 ™
-java:S3457,"Q%n should be used in place of \n to produce the platform-specific line separator.(ã··¤ıÿÿÿÿ8¬±Şı¾2J$d8b5501e-002d-4494-98a3-51693dcb3b15
-}
-java:S22090"5Change this instance-reference to a static reference.(çÕñøÿÿÿÿ8¯±Şı¾2J$859eed05-3678-4cd0-b955-f5efdfa87768
+java:S3457/"Q%n should be used in place of \n to produce the platform-specific line separator.(ÈÌ‚äùÿÿÿÿ8¢·ı™¿2J$16d52cee-c056-4c71-a240-6954ea9ab188
 x
-java:S24400"0Remove this instantiation of "UserInputHandler".(çÕñøÿÿÿÿ8¯±Şı¾2J$47e1462e-be67-475e-8d27-9300875eb8ac
+java:S22096"5Change this instance-reference to a static reference.(›¯ä’8ª·ı™¿2J$abf2506f-2dfb-4a8d-bd4f-138bf793ae42
+s
+java:S24406"0Remove this instantiation of "UserInputHandler".(›¯ä’8ª·ı™¿2J$ca5b4862-2a13-4c8d-918c-700d43f08510
 ”
-java:S34572"Q%n should be used in place of \n to produce the platform-specific line separator.(¹Ù–Š8¯±Şı¾2J$46f5ca70-82a4-420b-8145-5aeb2a9c9f81
-½
-java:S6204D"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8»·„ÿ¾2J$b606930f-bc57-4b9d-ad24-b1891fdc1a9a
+java:S34578"Q%n should be used in place of \n to produce the platform-specific line separator.(š±†¾8§·ı™¿2J$da8a3829-632f-4021-91a7-10c5da4a55d8
+}
+java:S2209<"5Change this instance-reference to a static reference.(ğÉ÷Ìşÿÿÿÿ8­·ı™¿2J$e13aeb34-2b26-40fa-a2a0-fb2477c935cf
+x
+java:S2440<"0Remove this instantiation of "UserInputHandler".(ğÉ÷Ìşÿÿÿÿ8­·ı™¿2J$4818ba02-8027-4263-a6c6-754e677ad9d3
+™
+java:S3457>"Q%n should be used in place of \n to produce the platform-specific line separator.(ã··¤ıÿÿÿÿ8«·ı™¿2J$1c628f3a-4469-4228-ac14-e9f057bc8468
+}
+java:S2209B"5Change this instance-reference to a static reference.(çÕñøÿÿÿÿ8Ö“‰š¿2J$1fcbec78-f44e-431e-a06d-a5229053ef30
+x
+java:S2440B"0Remove this instantiation of "UserInputHandler".(çÕñøÿÿÿÿ8Ö“‰š¿2J$d86f9dbc-387b-471c-8cff-984f3b5807fa
+”
+java:S3457D"Q%n should be used in place of \n to produce the platform-specific line separator.(¹Ù–Š8®·ı™¿2J$2ae589ec-bc8c-47c3-ad8a-a6a8568fe0be

@@ -3,6 +3,7 @@ package com.golod.buildingmaterialscalculator.service.operations;
 import com.golod.buildingmaterialscalculator.domain.model.Material;
 import com.golod.buildingmaterialscalculator.domain.model.Category;
 import com.golod.buildingmaterialscalculator.service.util.JsonDataReader;
+import com.golod.buildingmaterialscalculator.service.validation.MaterialValidator;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -20,11 +21,21 @@ public class SearchService {
         .filter(material -> material.getName().equalsIgnoreCase(materialName))
         .collect(Collectors.toList());
 
+    // Валідація кожного знайденого матеріалу
+    result.forEach(material -> {
+      List<String> validationErrors = MaterialValidator.validate(material);
+      if (!validationErrors.isEmpty()) {
+        // Виведення помилок валідації для матеріалу
+        System.out.println("Матеріал ID: " + material.getId() + " має помилки валідації:");
+        validationErrors.forEach(System.out::println);
+      }
+    });
+
     displayMaterialsResult(result, materialName);
     return result;
   }
 
-// Пошук категорії за назвою
+  // Пошук категорії за назвою
   public Category searchCategoryByName(String categoryName) {
     List<Category> categories = loadCategories();
 
@@ -39,7 +50,6 @@ public class SearchService {
     }
     return category;
   }
-
 
   // Завантаження категорій з JSON
   private List<Category> loadCategories() {
@@ -60,10 +70,9 @@ public class SearchService {
   }
 
   // Виведення результатів пошуку
-// Виведення результатів пошуку
   private void displayMaterialsResult(List<Material> result, String searchCriteria) {
     if (result.isEmpty()) {
-      System.out.println("Матеріали для '" + searchCriteria + "' не знайдені.");
+      System.out.println("Матеріал '" + searchCriteria + "' не знайдено.");
     } else {
       result.forEach(material -> {
         System.out.println("ID: " + material.getId());

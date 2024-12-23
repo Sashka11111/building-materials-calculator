@@ -9,67 +9,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53a5b41b-3c46-42dc-afdb-e873f89ff1d0" name="Changes" comment="🦋 Implemented authorization and registration. CRUD for materials and categories is done.">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/building_materials_calculator_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08b5b21e6bd56c2ed287cd6b6f9f33bb67d3bfc6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d3d8ad450cfa2ffaa140cc14c34b1478384c22f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26ae4cf04dd4cd1f732dc28bc6b1dcd8feab7286" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e5863f0f2cfc6384351ee451ac0e15f6222db7c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/6772255dfef822ecafa763c65c460212b3af3248" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6acb14cefd81566f169381f57aec8db158bda095" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/e/7eceb5d4cfa0d323aacfb875eb6faff2d8bcf999" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81c4f08dd883217b4407b134186377409f49a0c8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a28e2518680be5f6a9a59facbb806f7ddd55a243" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a9656fce43e4990ad8f389fca79b9cc8a436965e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bd36493c84ac028619093b6ac6dc4be27d9c42f3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c371596a65598d4e798211e677c2ea6893a2290a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e46d17e54405c862dd304cd6138d11d143e5358c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ea40e76f90f38f8b30688e1c36e493e18b6caf7f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f493c9a0db9955f9aced1235ed5e7246fb02e318" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9b8179b7b442a940b376629526f2cac300b6a62" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/8/08b5b21e6bd56c2ed287cd6b6f9f33bb67d3bfc6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/d/0d3d8ad450cfa2ffaa140cc14c34b1478384c22f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/6/26ae4cf04dd4cd1f732dc28bc6b1dcd8feab7286" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/e/3e5863f0f2cfc6384351ee451ac0e15f6222db7c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/7/6772255dfef822ecafa763c65c460212b3af3248" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/a/6acb14cefd81566f169381f57aec8db158bda095" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/e/7eceb5d4cfa0d323aacfb875eb6faff2d8bcf999" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/1/81c4f08dd883217b4407b134186377409f49a0c8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/2/a28e2518680be5f6a9a59facbb806f7ddd55a243" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/9/a9656fce43e4990ad8f389fca79b9cc8a436965e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/d/bd36493c84ac028619093b6ac6dc4be27d9c42f3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/3/c371596a65598d4e798211e677c2ea6893a2290a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/4/e46d17e54405c862dd304cd6138d11d143e5358c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/a/ea40e76f90f38f8b30688e1c36e493e18b6caf7f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/4/f493c9a0db9955f9aced1235ed5e7246fb02e318" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/9/f9b8179b7b442a940b376629526f2cac300b6a62" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9e291de94e002150261daac60ddf47750d21ab61" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a76c16609e7dcd8be6948da617dfcf42e2150b74" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad780dcc57f9707c19fb992d68cb703c2e3ded99" beforeDir="false" />
+    <list default="true" id="53a5b41b-3c46-42dc-afdb-e873f89ff1d0" name="Changes" comment="🦋 Material calculations have been implemented">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d3d8ad450cfa2ffaa140cc14c34b1478384c22f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d3d8ad450cfa2ffaa140cc14c34b1478384c22f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e5863f0f2cfc6384351ee451ac0e15f6222db7c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fcdf6c5b6a61cf7ca95f22c5acfd9d77d03fd11" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fcdf6c5b6a61cf7ca95f22c5acfd9d77d03fd11" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/6772255dfef822ecafa763c65c460212b3af3248" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a28e2518680be5f6a9a59facbb806f7ddd55a243" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a28e2518680be5f6a9a59facbb806f7ddd55a243" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c371596a65598d4e798211e677c2ea6893a2290a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df72ad646ad23c1159daf1c7d24d24466e55ea80" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df72ad646ad23c1159daf1c7d24d24466e55ea80" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e46d17e54405c862dd304cd6138d11d143e5358c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ea40e76f90f38f8b30688e1c36e493e18b6caf7f" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/eeeaac8c5a46ac8901e1fe100a6e0acd34de2631" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/eeeaac8c5a46ac8901e1fe100a6e0acd34de2631" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7ccbea46ccdac5c973f175ee948b8264a27931c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7ccbea46ccdac5c973f175ee948b8264a27931c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9b8179b7b442a940b376629526f2cac300b6a62" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/e/9e291de94e002150261daac60ddf47750d21ab61" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/7/a76c16609e7dcd8be6948da617dfcf42e2150b74" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/d/ad780dcc57f9707c19fb992d68cb703c2e3ded99" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/e/3e5863f0f2cfc6384351ee451ac0e15f6222db7c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/7/6772255dfef822ecafa763c65c460212b3af3248" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/3/c371596a65598d4e798211e677c2ea6893a2290a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/4/e46d17e54405c862dd304cd6138d11d143e5358c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/a/ea40e76f90f38f8b30688e1c36e493e18b6caf7f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/9/f9b8179b7b442a940b376629526f2cac300b6a62" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/calculations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/categories.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/materials.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/materials.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/domain/model/Calculation.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/presentation/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/presentation/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/CalculationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/CalculationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/MaterialService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/MaterialService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/operations/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/operations/SearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/validation/CalculationValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/validation/MaterialValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/validation/MaterialValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/validation/UserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/golod/buildingmaterialscalculator/service/validation/UserValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,26 +68,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/1/IdeaProjects/building-materials-calculator/libs/jackson-databind-2.16.1.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/1/IdeaProjects/building-materials-calculator/libs/jackson-databind-2.16.1.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -134,7 +102,9 @@
       <workItem from="1734813543016" duration="3107000" />
       <workItem from="1734863897026" duration="15030000" />
       <workItem from="1734893155257" duration="6044000" />
-      <workItem from="1734938406663" duration="722000" />
+      <workItem from="1734938406663" duration="1139000" />
+      <workItem from="1734940660204" duration="1648000" />
+      <workItem from="1734952459746" duration="3734000" />
     </task>
     <task id="LOCAL-00001" summary="😈 Created services for entities">
       <option name="closed" value="true" />
@@ -152,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734883404245</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="🦋 Material calculations have been implemented">
+      <option name="closed" value="true" />
+      <created>1734939415880</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734939415880</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=" Created services for entities" />
     <MESSAGE value=" Implemented authorization and registration. CRUD for materials and categories is done." />
-    <option name="LAST_COMMIT_MESSAGE" value=" Implemented authorization and registration. CRUD for materials and categories is done." />
+    <MESSAGE value=" Material calculations have been implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Material calculations have been implemented" />
   </component>
 </project>

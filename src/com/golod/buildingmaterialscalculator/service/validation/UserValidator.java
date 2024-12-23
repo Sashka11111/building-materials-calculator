@@ -28,17 +28,6 @@ public class UserValidator {
     return isNotEmpty(name) && name.matches(".*[a-zA-Zа-яА-Я].*");
   }
 
-  // Валідація для перевірки, чи є рядок числом
-  public static boolean isValidNumber(String value) {
-    if (value == null) return false;
-    try {
-      Double.parseDouble(value);
-      return true;
-    } catch (NumberFormatException e) {
-      return false;
-    }
-  }
-
   // Валідація для перевірки формату пароля
   public static boolean isValidPassword(String password) {
     if (password == null) return false;

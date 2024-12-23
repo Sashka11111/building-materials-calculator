@@ -1,0 +1,13 @@
+
+
+java:S1144¦"8Remove this unused private "saveMaterialsToJson" method.(ğ©‡úÿÿÿÿ8— ùš¿2J$15dd11d3-66df-452b-9326-9e060f26a903
+š
+java:S3776:"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(Ñ­Íêøÿÿÿÿ8™—²›¿2J$6d72835f-cd60-4b59-838c-e9228392698a
+½
+java:S6204J"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8¥¼²›¿2J$97fbadaf-35bf-4534-b4a4-b74659aa54f1
+½
+java:S6204["zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8©¼²›¿2J$adc40e5e-aa7b-425f-9d48-984c9ab12f20
+½
+java:S6204m"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8­¼²›¿2J$b43d1785-ab49-4120-92be-2cb4376558d1
+¾
+java:S6204‚"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8¯¼²›¿2J$9e455463-98df-422b-8877-ca3c9af8fb9e

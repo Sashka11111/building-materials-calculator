@@ -1,61 +1,61 @@
 
 j
-java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8–¾Üı¾2J$13afd05d-ce21-416a-828f-acb7d5c0d751
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8–¾Üı¾2J$2fa46da0-a5d2-46a4-883d-bff3b5503039
 Ã
-java:S1192w"{Define a constant instead of duplicating this literal "3) ĞŸĞ¾Ğ²ĞµÑ€Ğ½ÑƒÑ‚Ğ¸ÑÑ Ğ´Ğ¾ Ğ³Ğ¾Ğ»Ğ¾Ğ²Ğ½Ğ¾Ğ³Ğ¾ Ğ¼ĞµĞ½Ñ" 4 times.(œåİÃøÿÿÿÿ8œ¾Üı¾2J$2f287b56-0588-40dd-8808-b010ce364287
+java:S1192w"{Define a constant instead of duplicating this literal "3) ĞŸĞ¾Ğ²ĞµÑ€Ğ½ÑƒÑ‚Ğ¸ÑÑ Ğ´Ğ¾ Ğ³Ğ¾Ğ»Ğ¾Ğ²Ğ½Ğ¾Ğ³Ğ¾ Ğ¼ĞµĞ½Ñ" 4 times.(œåİÃøÿÿÿÿ8œ¾Üı¾2J$ab20f313-aeb9-46b2-bb6d-c87c21305a9f
 À
-java:S1192-"}Define a constant instead of duplicating this literal "ĞĞµĞ²Ñ–Ñ€Ğ½Ğ¸Ğ¹ Ğ²Ğ¸Ğ±Ñ–Ñ€. Ğ¡Ğ¿Ñ€Ğ¾Ğ±ÑƒĞ¹Ñ‚Ğµ Ñ‰Ğµ Ñ€Ğ°Ğ·." 8 times.(œ¸Å8œ¾Üı¾2J$46d68381-5dab-45af-a433-22c5144b45d0
+java:S1192-"}Define a constant instead of duplicating this literal "ĞĞµĞ²Ñ–Ñ€Ğ½Ğ¸Ğ¹ Ğ²Ğ¸Ğ±Ñ–Ñ€. Ğ¡Ğ¿Ñ€Ğ¾Ğ±ÑƒĞ¹Ñ‚Ğµ Ñ‰Ğµ Ñ€Ğ°Ğ·." 8 times.(œ¸Å8œ¾Üı¾2J$5697518c-4561-43db-934c-99946c7fc6f3
 
-java:S1192F"FDefine a constant instead of duplicating this literal "Admin" 4 times.(Íúì³şÿÿÿÿ8œ¾Üı¾2J$513f1f09-2b77-4427-88cc-8e940eded50b
+java:S1192F"FDefine a constant instead of duplicating this literal "Admin" 4 times.(Íúì³şÿÿÿÿ8œ¾Üı¾2J$117582da-66d6-48a0-b12d-c762777c50e8
 —
-java:S1192"TDefine a constant instead of duplicating this literal "Ğ’Ğ°Ñˆ Ğ²Ğ¸Ğ±Ñ–Ñ€: " 8 times.(—¿üï8œ¾Üı¾2J$d2101239-4e98-43ca-bb9b-6ac509943665
+java:S1192"TDefine a constant instead of duplicating this literal "Ğ’Ğ°Ñˆ Ğ²Ğ¸Ğ±Ñ–Ñ€: " 8 times.(—¿üï8œ¾Üı¾2J$fa3f8bf9-6a26-4122-9c62-3588fce2d08a
 Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¸§Ó8¾Üı¾2J$4c1c4c22-3ce5-4a76-b8ef-157bbbb1aa7c
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¸§Ó8¾Üı¾2J$f025e585-7a30-4d20-a03e-b959b7faab8e
 ”
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(øÉ“88¤¾Üı¾2J$0b5dff21-41bd-48b2-9fa5-633a0d4bae8b
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(øÉ“88¤¾Üı¾2J$fbaf2fcf-acaf-4c36-8d18-b0a44c4e2416
 »
-java:S1130"yRemove the declaration of thrown exception 'java.lang.IllegalAccessException', as it cannot be thrown from method's body.(øÉ“88¤¾Üı¾2J$18c3c574-aea2-4763-985d-1a6fe4649fdf
+java:S1130"yRemove the declaration of thrown exception 'java.lang.IllegalAccessException', as it cannot be thrown from method's body.(øÉ“88¤¾Üı¾2J$4e6ea3da-0430-4102-aaf7-f3786d17f69f
 s
-java:S2440"0Remove this instantiation of "UserInputHandler".(Õ¶¸Õ8¤¾Üı¾2J$24adf18a-6d4d-4444-af52-d7c7a742d010
+java:S2440"0Remove this instantiation of "UserInputHandler".(Õ¶¸Õ8¤¾Üı¾2J$e16eef87-ee4f-42df-9891-97374aedba64
 x
-java:S2209"5Change this instance-reference to a static reference.(—¿üï8¨¾Üı¾2J$fa69846e-d98a-4399-b4c0-3cf5be2254bc
+java:S2209"5Change this instance-reference to a static reference.(—¿üï8¨¾Üı¾2J$3c9db57c-6b89-4dad-a49d-7a1888ba3f05
 z
-java:S6126:"2Replace this String concatenation with Text block.(œÒÿçøÿÿÿÿ8«¾Üı¾2J$92905ee3-28a3-4b50-9f48-01c495bb5f10
+java:S6126:"2Replace this String concatenation with Text block.(œÒÿçøÿÿÿÿ8«¾Üı¾2J$2cff9560-8222-42a6-8ef3-3841c03019a2
 x
-java:S2209O"5Change this instance-reference to a static reference.(—¿üï8°¾Üı¾2J$cde1961f-7707-4c21-835b-753811b3fd7e
+java:S2209O"5Change this instance-reference to a static reference.(—¿üï8°¾Üı¾2J$e5b53c26-83b7-40da-910a-c9d589ee33cb
 x
-java:S2209y"5Change this instance-reference to a static reference.(ÔÓØ÷8´¾Üı¾2J$94bed4b8-cf4f-4462-828e-9d336f60b70a
+java:S2209y"5Change this instance-reference to a static reference.(ÔÓØ÷8´¾Üı¾2J$54278b2e-690f-4bf3-9182-cd7f9c620266
 s
-java:S2440y"0Remove this instantiation of "UserInputHandler".(ÔÓØ÷8´¾Üı¾2J$8f9e0ef6-b099-4434-9654-ff5561ab7b65
+java:S2440y"0Remove this instantiation of "UserInputHandler".(ÔÓØ÷8´¾Üı¾2J$fbe2e990-7642-4c3e-8ce0-ecb2c8e2a662
 x
-java:S2209}"5Change this instance-reference to a static reference.(¶µæ8´¾Üı¾2J$a7dddafd-1a8f-4cfb-bee3-efc98b1b3841
+java:S2209}"5Change this instance-reference to a static reference.(¶µæ8´¾Üı¾2J$52abc8c2-6ae7-4680-bd24-2e51be06e533
 s
-java:S2440}"0Remove this instantiation of "UserInputHandler".(¶µæ8´¾Üı¾2J$076cb0b9-5709-4472-9d1c-9645d786d299
+java:S2440}"0Remove this instantiation of "UserInputHandler".(¶µæ8´¾Üı¾2J$47b245ca-f6f5-44d7-97e3-f40476d28822
 ~
-java:S2209"5Change this instance-reference to a static reference.(£ø†ıÿÿÿÿ8·¾Üı¾2J$5a5002de-175f-4841-b49c-028872a1dd1e
+java:S2209"5Change this instance-reference to a static reference.(£ø†ıÿÿÿÿ8·¾Üı¾2J$313ef3b2-092e-4374-9b86-82d61918bf09
 y
-java:S2440"0Remove this instantiation of "UserInputHandler".(£ø†ıÿÿÿÿ8·¾Üı¾2J$3413a714-9d4a-48a3-ad1a-09e3e844c456
+java:S2440"0Remove this instantiation of "UserInputHandler".(£ø†ıÿÿÿÿ8·¾Üı¾2J$f53011c3-5c90-4f1d-982c-9bf6727a5911
 y
-java:S2209‘"5Change this instance-reference to a static reference.(ÔÓØ÷8º¾Üı¾2J$4561f78c-fb6f-491c-a566-dd2c0a48d869
+java:S2209‘"5Change this instance-reference to a static reference.(ÔÓØ÷8º¾Üı¾2J$c190bb07-6be0-46ee-ab4b-9d1632445862
 t
-java:S2440‘"0Remove this instantiation of "UserInputHandler".(ÔÓØ÷8º¾Üı¾2J$a678c78c-dd9e-4503-8607-13ae61371589
+java:S2440‘"0Remove this instantiation of "UserInputHandler".(ÔÓØ÷8º¾Üı¾2J$8d0a4772-1671-4fd2-b2c1-63e5a22d5e19
 y
-java:S2209«"5Change this instance-reference to a static reference.(ÔÓØ÷8½¾Üı¾2J$3e0fc9f5-60c5-4a54-97a8-87c081bc75e2
+java:S2209ª"5Change this instance-reference to a static reference.(ÔÓØ÷8½¾Üı¾2J$a5f76a63-cb16-4c82-b537-b86c5541446d
 t
-java:S2440«"0Remove this instantiation of "UserInputHandler".(ÔÓØ÷8½¾Üı¾2J$00adf440-ac8c-473a-87ce-b16876ec8cb8
+java:S2440ª"0Remove this instantiation of "UserInputHandler".(ÔÓØ÷8½¾Üı¾2J$55442d68-91f7-47ba-a88b-ebba614f995d
 y
-java:S2209Ê"5Change this instance-reference to a static reference.(ÔÓØ÷8Â¾Üı¾2J$951e4a26-32ba-4635-85e0-81fa65712a66
+java:S2209É"5Change this instance-reference to a static reference.(ÔÓØ÷8Â¾Üı¾2J$0557433e-a919-41b9-8920-8f3f3764c131
 t
-java:S2440Ê"0Remove this instantiation of "UserInputHandler".(ÔÓØ÷8Â¾Üı¾2J$ad935ad1-6237-4562-9bc1-a95302e1bb6a
+java:S2440É"0Remove this instantiation of "UserInputHandler".(ÔÓØ÷8Â¾Üı¾2J$7a30dad7-0313-4a04-b087-9d33933b0d36
 y
-java:S2209á"5Change this instance-reference to a static reference.(ÔÓØ÷8Ä¾Üı¾2J$ee52bc93-f6ff-4b77-84fc-b103459dc87e
+java:S2209à"5Change this instance-reference to a static reference.(ÔÓØ÷8Ä¾Üı¾2J$6e6e543c-4ad4-4349-88e6-82b7224f87ff
 t
-java:S2440á"0Remove this instantiation of "UserInputHandler".(ÔÓØ÷8Ä¾Üı¾2J$3476f439-1a2d-44ac-8920-26be9db7fbf3
+java:S2440à"0Remove this instantiation of "UserInputHandler".(ÔÓØ÷8Ä¾Üı¾2J$238b4893-ea2b-4903-ac03-5b68549117a1
 y
-java:S2209ù"5Change this instance-reference to a static reference.(ÔÓØ÷8Ä¾Üı¾2J$33bdf2cf-c0d0-4f85-b077-73870189bed6
+java:S2209ø"5Change this instance-reference to a static reference.(ÔÓØ÷8Ä¾Üı¾2J$caf7d098-52bd-41a4-b986-17ca0b8e176f
 t
-java:S2440ù"0Remove this instantiation of "UserInputHandler".(ÔÓØ÷8Ä¾Üı¾2J$ea46fc93-b4a1-4e99-8e59-3c596bfeb832
+java:S2440ø"0Remove this instantiation of "UserInputHandler".(ÔÓØ÷8Ä¾Üı¾2J$892ac0d1-3de9-4080-8a8a-6eeb5cce169b
 ›
-java:S1128"XRemove this unused import 'com.golod.buildingmaterialscalculator.domain.model.Material'.(¥¤Î°8êÌöş¾2J$a46eaafe-fc83-4afa-a211-bf4bef377083
+java:S1128"XRemove this unused import 'com.golod.buildingmaterialscalculator.domain.model.Material'.(¥¤Î°8êÌöş¾2J$3e739462-c458-48d0-ba98-a231def3c6af
 s
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8êÌöş¾2J$f076f520-b192-4160-9908-b24619e29a7f
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8êÌöş¾2J$9b0bd825-fa8e-42bd-9a83-b50e38b82be2

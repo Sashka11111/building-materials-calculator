@@ -22,10 +22,4 @@
   "password" : "$2b$12$H2NDdnyu0GSFv4.sgwUo4.2eC1Bpe16sgUWkCHiGxPjp8929JLgDq",
   "email" : "alice.walker@gmail.com",
   "role" : "User"
-}, {
-  "userId" : "8b037680-84bb-4c64-91aa-4ca94e0fdf79",
-  "username" : "Sashka",
-  "password" : "$2a$10$18kE2J5T5zAh4CdspTiOhepuCPiOyOgXMmf8trb9kDliTXattf/oe",
-  "email" : "Sashka@gmail.com",
-  "role" : "User"
 } ]

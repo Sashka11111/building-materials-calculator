@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.golod.buildingmaterialscalculator.domain.model.Material;
 import com.golod.buildingmaterialscalculator.domain.model.Category;
+import com.golod.buildingmaterialscalculator.service.util.FileUtil;
 import com.golod.buildingmaterialscalculator.service.util.JsonDataReader;
 
 import com.golod.buildingmaterialscalculator.service.validation.MaterialValidator;
@@ -12,6 +13,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 public class MaterialService {
 
@@ -53,97 +55,112 @@ public class MaterialService {
         .findFirst()
         .orElse(null);
   }
-
   public static void addMaterial() {
+    List<Material> materials = JsonDataReader.modelDataJsonReader(MATERIALS_FILE_PATH, Material[].class);
+
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Додавання нового матеріалу");
+    Material newMaterial = new Material();
+    newMaterial.setId(UUID.randomUUID()); // Генеруємо унікальний ID для нового матеріалу
 
-    String name = getValidatedName(scanner);
-    String unit = getValidatedUnit(scanner);
-    double unitPrice = getValidatedUnitPrice(scanner);
-    double unitSize = getValidatedUnitSize(scanner);
-    String categoryId = getValidatedCategoryId(scanner);
+    // Введення та валідація назви
+    while (true) {
+      System.out.print("Введіть назву матеріалу: ");
+      String newMaterialName = scanner.nextLine();
+      newMaterial.setName(newMaterialName);
 
-    // Генерація унікального UUID
-    UUID materialId = UUID.randomUUID();
-
-    // Пошук категорії за ID
-    Category category = findCategoryById(UUID.fromString(categoryId));
-    if (category == null) {
-      System.out.println("Категорію з таким ID не знайдено. Скасування операції.");
-      return;
+      List<String> errors = MaterialValidator.validate(newMaterial);
+      List<String> nameErrors = errors.stream()
+          .filter(error -> error.contains("Назва матеріалу"))
+          .collect(Collectors.toList());
+      if (nameErrors.isEmpty()) {
+        break;
+      } else {
+        nameErrors.forEach(System.out::println); // Виводимо всі помилки для назви
+      }
     }
 
-    // Створення нового матеріалу
-    Material newMaterial = new Material(materialId, name, unit, unitPrice, unitSize, category);
+    // Введення та валідація одиниці виміру
+    while (true) {
+      System.out.print("Введіть одиницю виміру (наприклад, 'кг', 'м2', 'шт'): ");
+      String newUnit = scanner.nextLine();
+      newMaterial.setUnit(newUnit);
 
-    // Виконання валідації
-    List<String> validationErrors = MaterialValidator.validate(newMaterial);
-
-    // Якщо є помилки валідації, вивести їх
-    if (!validationErrors.isEmpty()) {
-      validationErrors.forEach(System.out::println);
-      return;
+      List<String> errors = MaterialValidator.validate(newMaterial);
+      List<String> unitErrors = errors.stream()
+          .filter(error -> error.contains("Одиниця виміру"))
+          .collect(Collectors.toList());
+      if (unitErrors.isEmpty()) {
+        break;
+      } else {
+        unitErrors.forEach(System.out::println); // Виводимо всі помилки для одиниці виміру
+      }
     }
 
-    // Якщо матеріал валідний, додаємо його до списку та зберігаємо
+    // Введення та валідація ціни
+    while (true) {
+      System.out.print("Введіть ціну матеріалу: ");
+      String newUnitPrice = scanner.nextLine();
+      try {
+        newMaterial.setUnitPrice(Double.parseDouble(newUnitPrice));
+
+        List<String> errors = MaterialValidator.validate(newMaterial);
+        List<String> priceErrors = errors.stream()
+            .filter(error -> error.contains("Ціна за одиницю"))
+            .collect(Collectors.toList());
+        if (priceErrors.isEmpty()) {
+          break;
+        } else {
+          priceErrors.forEach(System.out::println); // Виводимо всі помилки для ціни
+        }
+      } catch (NumberFormatException e) {
+        System.out.println("Ціна повинна бути числом. Спробуйте знову.");
+      }
+    }
+
+    // Введення та валідація розміру одиниці
+    while (true) {
+      System.out.print("Введіть розмір одиниці (наприклад, для блоків): ");
+      String newUnitSize = scanner.nextLine();
+      try {
+        newMaterial.setUnitSize(Double.parseDouble(newUnitSize));
+
+        List<String> errors = MaterialValidator.validate(newMaterial);
+        List<String> unitSizeErrors = errors.stream()
+            .filter(error -> error.contains("Розмір одиниці"))
+            .collect(Collectors.toList());
+        if (unitSizeErrors.isEmpty()) {
+          break;
+        } else {
+          unitSizeErrors.forEach(System.out::println); // Виводимо всі помилки для розміру одиниці
+        }
+      } catch (NumberFormatException e) {
+        System.out.println("Розмір одиниці повинен бути числом. Спробуйте знову.");
+      }
+    }
+
+    // Введення та валідація UUID категорії
+    while (true) {
+      System.out.print("Введіть UUID категорії матеріалу: ");
+      String categoryIdInput = scanner.nextLine();
+      try {
+        UUID categoryId = UUID.fromString(categoryIdInput); // Перетворюємо введення на UUID
+        Category category = findCategoryById(categoryId);
+
+        if (category != null) {
+          newMaterial.setCategory(category);
+          break;
+        } else {
+          System.out.println("Категорія з таким UUID не знайдена.");
+        }
+      } catch (IllegalArgumentException e) {
+        System.out.println("Невірний формат UUID. Спробуйте знову.");
+      }
+    }
+
+    // Додаємо новий матеріал до списку та зберігаємо
     materials.add(newMaterial);
-    saveMaterialsToJson();
-
-    System.out.println("Новий матеріал додано успішно");
-  }
-
-  private static String getValidatedName(Scanner scanner) {
-    System.out.print("Введіть назву матеріалу: ");
-    return scanner.nextLine();
-  }
-
-  private static String getValidatedUnit(Scanner scanner) {
-    System.out.print("Введіть одиницю виміру матеріалу: ");
-    return scanner.nextLine();
-  }
-
-  private static double getValidatedUnitPrice(Scanner scanner) {
-    double unitPrice;
-    while (true) {
-      System.out.print("Введіть ціну за одиницю: ");
-      String input = scanner.nextLine();
-      try {
-        unitPrice = Double.parseDouble(input);
-        if (unitPrice <= 0) {
-          System.out.println("Ціна за одиницю повинна бути більшою за нуль.");
-        } else {
-          break;
-        }
-      } catch (NumberFormatException e) {
-        System.out.println("Введіть правильну ціну.");
-      }
-    }
-    return unitPrice;
-  }
-
-  private static double getValidatedUnitSize(Scanner scanner) {
-    double unitSize;
-    while (true) {
-      System.out.print("Введіть розмір одиниці: ");
-      String input = scanner.nextLine();
-      try {
-        unitSize = Double.parseDouble(input);
-        if (unitSize <= 0) {
-          System.out.println("Розмір одиниці повинен бути більшим за нуль.");
-        } else {
-          break;
-        }
-      } catch (NumberFormatException e) {
-        System.out.println("Введіть правильний розмір одиниці.");
-      }
-    }
-    return unitSize;
-  }
-
-  private static String getValidatedCategoryId(Scanner scanner) {
-    System.out.print("Введіть ID категорії матеріалу: ");
-    return scanner.nextLine();
+    FileUtil.saveToFile(MATERIALS_FILE_PATH, materials);
+    System.out.println("Матеріал успішно додано.");
   }
 
   private static void saveMaterialsToJson() {

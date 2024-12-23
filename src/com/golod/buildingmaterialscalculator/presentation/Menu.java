@@ -166,7 +166,6 @@ public class Menu {
       System.out.println("4) Розрахунок кількості підлогового покриття");
       System.out.println("5) Розрахунок кількості штукатурки для стін");
       System.out.println("6) Повернутися до головного меню");
-      System.out.print("Оберіть пункт меню: ");
 
       int choice = new UserInputHandler().getIntInput("Ваш вибір: ");
       CalculationService calculationService = new CalculationService();
